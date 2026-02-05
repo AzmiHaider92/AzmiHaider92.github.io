@@ -7,14 +7,7 @@
 Before my PhD, I completed an M.Sc. <a href="/MSC_Dissertation___Forgery_Detection_in_Depth_Images.pdf">[thesis]</a> in computer science at the University of Haifa and a B.Sc. in electrical engineering at the Technion.
 
 
-
-
-
-
-
-
-
-
+<p style="clear: left;"></p>
 
 
 
