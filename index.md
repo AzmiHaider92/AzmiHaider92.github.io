@@ -61,8 +61,6 @@ We also experimented with a contrastive (pairwise) Siamese CNN: given two painti
 <p style="clear: left;"></p><hr style="height:1px;">
 
 
----
-
 ## Art
 <div style="overflow:auto; margin-bottom:12px;">
   <img src="pencil_drawings.png" alt="pencil"
