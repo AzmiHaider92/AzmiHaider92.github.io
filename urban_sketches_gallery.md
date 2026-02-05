@@ -79,4 +79,8 @@ title: Urban Sketches Gallery
     <img src="/urban_sketches_gallery/The-Hive.png" style="width:100%; height:100%; object-fit:cover; display:block;">
   </a>
 
+  <a href="/urban_sketches_gallery/Al-Khalsa.png" style="display:block; width:100%; aspect-ratio:1/1; overflow:hidden; border-radius:10px;">
+    <img src="/urban_sketches_gallery/Al-Khalsa.png" style="width:100%; height:100%; object-fit:cover; display:block;">
+  </a>
+
 </div>
