@@ -44,14 +44,14 @@ I am interested in:
 ## Fun projects
 
 <img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/PainterByNumber.png" alt="Painter" width="35%" />
-**Painter by Numbers (Kaggle)** — Our solution to the Kaggle “Painter by Numbers” competition, where the goal is to learn an artist’s painting style. We used a Siamese (triplet) CNN with shared weights to learn an artist-style embedding. Each training step samples an anchor painting from artist A, a positive painting from the same artist A, and a negative painting from a different artist B. The network maps each image to a feature vector, and we train with triplet loss to pull anchor–positive embeddings closer while pushing anchor–negative embeddings farther apart, producing a feature space where each artist forms a cluster.
+**Painter by Numbers ([Kaggle Competition](https://www.kaggle.com/c/painter-by-numbers))** — Our solution to the Kaggle “Painter by Numbers” competition, where the goal is to learn an artist’s painting style. We used a Siamese (triplet) CNN with shared weights to learn an artist-style embedding. Each training step samples an anchor painting from artist A, a positive painting from the same artist A, and a negative painting from a different artist B. The network maps each image to a feature vector, and we train with triplet loss to pull anchor–positive embeddings closer while pushing anchor–negative embeddings farther apart, producing a feature space where each artist forms a cluster.
 We also experimented with a contrastive (pairwise) Siamese CNN: given two paintings and a binary label (same artist / different artist), we use contrastive loss to minimize the distance for same-artist pairs and increase it for different-artist pairs. Pairs are sampled by first choosing the label, then selecting paintings accordingly (two from one artist vs. one from each of two artists).
-Links: [Competition](https://www.kaggle.com/c/painter-by-numbers), [Solution](https://github.com/AzmiHaider92/PainterByNumbers)
+[Code](https://github.com/AzmiHaider92/PainterByNumbers)
 <p style="clear: left;"></p><hr style="height:1px;">
 
 <img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/rgb_maps.gif" alt="perfectloop" width="35%" />
 **Perfect-Loop GIFs with NeRF** — A small project to turn a GIF into a seamless “perfect loop” by reconstructing the scene with a NeRF and re-rendering frames along a closed camera path so the first and last frames match smoothly. Pipeline: extract frames → estimate camera poses with COLMAP → train NeRF with TensoRF → render along a circular loop → export the new GIF.
-Links: [Solution](https://github.com/AzmiHaider92/Perfect-loop-gif-nerf)
+[Code](https://github.com/AzmiHaider92/Perfect-loop-gif-nerf)
 <p style="clear: left;"></p><hr style="height:1px;">
 
 
