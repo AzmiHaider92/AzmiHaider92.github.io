@@ -63,6 +63,13 @@ We also experimented with a contrastive (pairwise) Siamese CNN: given two painti
 
 ---
 
+## Art
+
+<a href="/pencil_gallery">Gallery</a> ·
+
+
+
+
 ## Contact
 
 azmi.haider92@gmail.com  
