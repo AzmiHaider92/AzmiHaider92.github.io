@@ -22,7 +22,7 @@ I am interested in:
 
 ## Research
 
-<img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/tokenDiffusion.png" alt="WhatLearn" width="35%" />
+<img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/tokenDiffusion2.png" alt="WhatLearn" width="35%" />
 **Tokenized Neural Fields: Structured Representations of Continuous Signals** - In this work [OpenReview](https://openreview.net/forum?id=41LUVIstlH) (NeurIPS-W 2025), we introduce Tokenized Neural Fields (TNF), a unified framework that represents continuous signals using a compact set of learnable tokens that interact with coordinate queries via cross-attention. By decoupling the representation from the decoder architecture, TNF enables scalable training across modalities, efficient adaptation to new signals, and probabilistic inference directly in token space. We validate TNF on 1D regression, 2D image reconstruction, and 3D scene modeling, achieving higher fidelity with fewer parameters than encoder- or latent-based baselines, and show emergent token specialization plus generative modeling when paired with diffusion transformers.
 <p style="clear: left;"></p><hr style="height:1px;">
 
