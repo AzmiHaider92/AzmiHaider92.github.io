@@ -7,9 +7,16 @@
 Before my PhD, I completed an M.Sc. <a href="/MSC_Dissertation___Forgery_Detection_in_Depth_Images.pdf">[thesis]</a> in computer science at the University of Haifa and a B.Sc. in electrical engineering at the Technion.
 
 
+[Publications](https://scholar.google.com/citations?user=RyPu18oAAAAJ&hl=en)  &nbsp;&nbsp;&nbsp; [Contact](#contact)
+
+
 <p style="clear: left;"></p>
 
-
+I am interested in computational models of perception, 3D scene understanding, simulation-based inference and machine learning for scientific discovery. I mainly take generative approaches that model perception as a probabilistic inverse problem. 
+- learning models of 3D scenes that can be used for probabilistic inference.
+- learning continuous and discrete representations of continuous signals.
+- amortizing simulation-based inference. 
+- scientific dicovery using flexible probabilisit modeling of the data acquisition process.
 
 
 ### Interests
