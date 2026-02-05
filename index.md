@@ -60,6 +60,7 @@ We also experimented with a contrastive (pairwise) Siamese CNN: given two painti
 [Code](https://github.com/AzmiHaider92/RL)
 <p style="clear: left;"></p><hr style="height:1px;">
 
+---
 
 ## Off the Clock
 
