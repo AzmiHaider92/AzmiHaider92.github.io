@@ -3,23 +3,46 @@
 
 <img style="float: left; margin: 0px 20px 20px 0px; max-width: 270px;" src="/profile.jpg" alt="Azmi A. Haider" width="50%" />
 
-PhD researcher</strong> in computer vision and generative modeling (diffusion/flows, token-based implicit representations) at the University of Haifa, advised by [Dan Rosenbaum](https://danrsm.github.io/), studying generative models.
-Before my PhD, I completed an M.Sc. (research) in computer science at the University of Haifa and a B.Sc. in electrical engineering at the Technion.  
+**PhD researcher** in computer vision and generative modeling (diffusion/flows, token-based implicit representations) at the University of Haifa, advised by [Dan Rosenbaum](https://danrsm.github.io/), studying generative models.
+Before my PhD, I completed an M.Sc. (research) in computer science at the University of Haifa and a B.Sc. in electrical engineering at the Technion.
 
 
 
-<p style="clear: left;"></p>
 
-I am interested in computational models of perception, 3D scene understanding, simulation-based inference and machine learning for scientific discovery. I mainly take generative approaches that model perception as a probabilistic inverse problem. 
-- learning models of 3D scenes that can be used for probabilistic inference.
-- learning continuous and discrete representations of continuous signals.
-- amortizing simulation-based inference. 
-- scientific dicovery using flexible probabilisit modeling of the data acquisition process.
+### Interests
+- Diffusion/flow-based generative models
+- Learning continuous and discrete representations of continuous signals
+- Fast amortized inference for probabilistic inference
+- Computer vision with deep learning (representation learning, generative models)
 
+---
 
 ## Research
 
+<img src="assets/proj1.png" alt="Project 1" width="260">
+
+**Project title 1** — 2–3 sentence description of what it is and why it matters.  
+Links: [paper](#) · [code](#) · [demo](#)
+
+* * *
+
+<img src="assets/proj2.png" alt="Project 2" width="260">
+
+**Project title 2** — 2–3 sentence description.  
+Links: [paper](#) · [code](#)
+
+---
+
+## Publications
+
+- Author 1, **Azmi Haider**, Author 3. **Paper title.** Venue, Year. [PDF](#) · [Code](#)
+- **Azmi Haider**, Author 2. **Paper title.** arXiv, Year. [arXiv](#)
+
+---
 
 ## Contact
+
+your.email@domain.com  
+[Google Scholar](#) · [Twitter/X](#) · [GitHub](#) · [LinkedIn](#)
 
 
