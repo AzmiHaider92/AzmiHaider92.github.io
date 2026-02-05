@@ -72,7 +72,7 @@ We also experimented with a contrastive (pairwise) Siamese CNN: given two painti
 <hr style="height:1px;">
 
 <div style="overflow:auto; margin-bottom:12px;">
-  <img src="urban_sketches.png" alt="pencil"
+  <img src="Urban_sketches.png" alt="urban"
        style="float:left; margin:0 20px 12px 0; width:400px; border-radius:10px;">
   <p><strong>Urban Sketches Gallery</strong> — <a href="/urban_sketches_gallery">Gallery</a></p>
 </div>
