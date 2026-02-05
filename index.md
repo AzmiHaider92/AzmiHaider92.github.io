@@ -41,7 +41,7 @@ I am interested in:
 
 ---
 
-## Fun projects
+## Fun Academic Projects
 
 <img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/PainterByNumber.png" alt="Painter" width="35%" />
 **Painter by Numbers ([Kaggle Competition](https://www.kaggle.com/c/painter-by-numbers))** — Our solution to the Kaggle “Painter by Numbers” competition, where the goal is to learn an artist’s painting style. We used a Siamese (triplet) CNN with shared weights to learn an artist-style embedding. Each training step samples an anchor painting from artist A, a positive painting from the same artist A, and a negative painting from a different artist B. The network maps each image to a feature vector, and we train with triplet loss to pull anchor–positive embeddings closer while pushing anchor–negative embeddings farther apart, producing a feature space where each artist forms a cluster.
@@ -61,13 +61,18 @@ We also experimented with a contrastive (pairwise) Siamese CNN: given two painti
 <p style="clear: left;"></p><hr style="height:1px;">
 
 
-## Art
+## Off the Clock
+Personal projects and creative work (drawing, photography, and more).
+A collection of personal projects and creative work outside research (drawing, photography, and more).
+
 <div style="overflow:auto; margin-bottom:12px;">
   <img src="pencil_drawings.png" alt="pencil"
        style="float:left; margin:0 20px 12px 0; width:400px; border-radius:10px;">
   <p><strong>Pencil drawings</strong> — Done with graphite pencils (HB, 2B, 4B). <a href="/pencil_gallery">Gallery</a></p>
 </div>
 <hr style="height:1px;">
+
+--- 
 
 <div style="overflow:auto; margin-bottom:12px;">
   <img src="Urban_sketches.png" alt="urban"
