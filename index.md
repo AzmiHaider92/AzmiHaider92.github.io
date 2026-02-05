@@ -1,5 +1,5 @@
 
-# Dan Rosenbaum
+# Azmi Haider
 
 <img style="float: left; margin: 0px 20px 20px 0px; max-width: 270px;" src="/assets/profile.jpg" alt="Azmi A. Haider" width="50%" />
 
