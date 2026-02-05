@@ -1,6 +1,6 @@
 # Your Name
 
-![Your Name](assets/profile.jpg)
+<img src="assets/profile.jpg" alt="Your Name" width="180">
 
 One-sentence role line (e.g., PhD researcher in computer vision & generative modeling at ...).
 
