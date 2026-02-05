@@ -49,6 +49,12 @@ We also experimented with a contrastive (pairwise) Siamese CNN: given two painti
 Links: [Competition](https://www.kaggle.com/c/painter-by-numbers), [Solution](https://github.com/AzmiHaider92/PainterByNumbers)
 <p style="clear: left;"></p><hr style="height:1px;">
 
+<img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/rgb_maps.gif" alt="perfectloop" width="35%" />
+**Perfect-Loop GIFs with NeRF** — A small project to turn a GIF into a seamless “perfect loop” by reconstructing the scene with a NeRF and re-rendering frames along a closed camera path so the first and last frames match smoothly. Pipeline: extract frames → estimate camera poses with COLMAP → train NeRF with TensoRF → render along a circular loop → export the new GIF.
+Links: [Solution](https://github.com/AzmiHaider92/Perfect-loop-gif-nerf)
+<p style="clear: left;"></p><hr style="height:1px;">
+
+
 ---
 
 ## Contact
