@@ -78,7 +78,6 @@ A collection of personal projects and creative work outside research (drawing, p
        style="float:left; margin:0 20px 12px 0; width:400px; border-radius:10px;">
   <p><strong>Urban Sketches Gallery</strong> — A tour of some of the places I sketched while visiting. Done with Pens and Markers.<a href="/urban_sketches_gallery">Gallery</a></p>
 </div>
-<hr style="height:1px;">
 
 
 ## Contact
