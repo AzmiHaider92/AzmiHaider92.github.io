@@ -12,7 +12,9 @@ I’m interested in:
 - Diffusion/flow-based generative models.
 - Learning continuous and discrete representations of continuous signals.
 - Fast amortized inference for probabilistic inference.
-- Computer vision with deep learning (representation learning, generative models)  
+- Computer vision with deep learning (representation learning, generative models)
+
+
 ---
 
 ## Research
