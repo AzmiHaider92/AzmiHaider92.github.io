@@ -22,24 +22,12 @@ I am interested in:
 
 ## Research
 
-<img src="assets/proj1.png" alt="Project 1" width="260">
+<img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/3dSensor.png" alt="Forgery" width="35%" />
+**Forgery detection in 3D-sensor images** - In this work [cvf](https://openaccess.thecvf.com/content_cvpr_2018_workshops/w32/html/Privman-Horesh_Forgery_Detection_in_CVPR_2018_paper.html) (CVPRW 2018), we introduce the problem of forgery detection in depth images as 3D cameras with depth sensors become increasingly common. We present an initial study showing that depth-image noise statistics can be leveraged for camera source identification and forgery detection. We also demonstrate that these noise cues can support depth reconstruction from noise.
 
-**Project title 1** — 2–3 sentence description of what it is and why it matters.  
-Links: [paper](#) · [code](#) · [demo](#)
 
-* * *
+<p style="clear: left;"></p><hr style="height:1px;">
 
-<img src="assets/proj2.png" alt="Project 2" width="260">
-
-**Project title 2** — 2–3 sentence description.  
-Links: [paper](#) · [code](#)
-
----
-
-## Publications
-
-- Author 1, **Azmi Haider**, Author 3. **Paper title.** Venue, Year. [PDF](#) · [Code](#)
-- **Azmi Haider**, Author 2. **Paper title.** arXiv, Year. [arXiv](#)
 
 ---
 
