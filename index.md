@@ -43,7 +43,8 @@ I am interested in:
 
 ## Contact
 
-your.email@domain.com  
-[Google Scholar](#) · [Twitter/X](#) · [GitHub](#) · [LinkedIn](#)
+azmi.haider92@gmail.com  
+[Google Scholar](https://scholar.google.com/citations?user=RyPu18oAAAAJ&hl=en) · [GitHub](https://github.com/AzmiHaider92) · [LinkedIn](https://www.linkedin.com/in/azmi-haider-305383314/)
+
 
 
