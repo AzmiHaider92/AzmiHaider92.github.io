@@ -1,22 +1,26 @@
-# Azmi A. Haider
 
-<div style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap;">
-  <img src="assets/profile.jpg" alt="Azmi Haider" style="width:180px; border-radius:10px;">
+---
+layout: default
+---
 
-  <div style="flex:1; min-width:260px;">
+<h1>Azmi Haider</h1>
+
+<link rel="stylesheet" href="assets/style.css">
+
+<div class="profile-wrap">
+  <img class="profile-pic" src="assets/profile.jpg" alt="Azmi Haider">
+  <div class="profile-text">
     <p><strong>PhD researcher</strong> in computer vision and generative modeling (diffusion/flows, token-based implicit representations) at the University of Haifa.</p>
     <p>Before my PhD, I completed an M.Sc. (research) in computer science at the University of Haifa and a B.Sc. in electrical engineering at the Technion. I’m interested in deep learning for computer vision, representation learning, and generative models.</p>
-
     <p>
-      <a href="#publications">Publications</a> &nbsp;·&nbsp;
-      <a href="#contact">Contact</a> &nbsp;·&nbsp;
+      <a href="#publications">Publications</a> ·
+      <a href="#contact">Contact</a> ·
       <a href="https://github.com/AzmiHaider92">GitHub</a>
     </p>
   </div>
 </div>
 
 <hr>
-
 
 [Publications](#publications)     [Contact](#contact)
 
