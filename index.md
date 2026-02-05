@@ -70,9 +70,7 @@ A collection of personal projects and creative work outside research (drawing, p
        style="float:left; margin:0 20px 12px 0; width:400px; border-radius:10px;">
   <p><strong>Pencil drawings</strong> — Done with graphite pencils (HB, 2B, 4B). <a href="/pencil_gallery">Gallery</a></p>
 </div>
-<hr style="height:1px;">
 
---- 
 
 <div style="overflow:auto; margin-bottom:12px;">
   <img src="Urban_sketches.png" alt="urban"
