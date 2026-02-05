@@ -22,9 +22,14 @@ I am interested in:
 
 ## Research
 
+<img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/WhatCanWeLearn.png" alt="WhatLearn" width="35%" />
+**What Can We Learn from Depth Camera Sensor Noise?** - In this work [CVF](https://www.mdpi.com/1424-8220/22/14/5448) (Sensors 2022), we show that depth-camera sensor noise—often ignored or treated as something to denoise—contains rich information about the captured scene. From noise patterns alone, we can infer an object’s depth and location, identify the camera type (and even the specific device), and estimate scene cues such as light direction; we also demonstrate applications like distinguishing real vs. masked faces. Finally, we show that depth-shadow (missing-depth) size depends on scene geometry and can be used to authenticate an object’s placement in the scene.
+<p style="clear: left;"></p><hr style="height:1px;">
+
+
 <img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/3dSensor.png" alt="Forgery" width="35%" />
 **Forgery detection in 3D-sensor images** - In this work [CVF](https://openaccess.thecvf.com/content_cvpr_2018_workshops/w32/html/Privman-Horesh_Forgery_Detection_in_CVPR_2018_paper.html) (CVPRW 2018), we introduce the problem of forgery detection in depth images as 3D cameras with depth sensors become increasingly common. We present an initial study showing that depth-image noise statistics can be leveraged for camera source identification and forgery detection. We also demonstrate that these noise cues can support depth reconstruction from noise.
-
+<p style="clear: left;"></p><hr style="height:1px;">
 
 ---
 
