@@ -1,3 +1,10 @@
-.profile-wrap { display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap; }
-.profile-pic { width:180px; border-radius:10px; }
-.profile-text { flex:1; min-width:260px; }
+/* widen the centered column a bit */
+.wrapper {
+  max-width: 980px;
+}
+
+/* optional: slightly tighter look */
+section {
+  font-size: 16px;
+  line-height: 1.5;
+}
