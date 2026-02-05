@@ -64,10 +64,12 @@ We also experimented with a contrastive (pairwise) Siamese CNN: given two painti
 ---
 
 ## Art
-<img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/pencil_drawings.png" alt="atari" width="35%" />
-**Pencil drawings** — <a href="/pencil_gallery">Gallery</a> ·
-<p style="clear: left;"></p><hr style="height:1px;">
-
+<div style="overflow:auto; margin-bottom:12px;">
+  <img src="/assets/pencil_drawings.png" alt="atari"
+       style="float:left; margin:0 20px 12px 0; width:200px; border-radius:10px;">
+  <p><strong>Pencil drawings</strong> — <a href="/pencil_gallery">Gallery</a></p>
+</div>
+<hr style="height:1px;">
 
 
 
