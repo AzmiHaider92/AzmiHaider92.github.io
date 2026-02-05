@@ -1,8 +1,8 @@
 ---
-title: Urban Sketchs Gallery
+title: Urban Sketches Gallery
 ---
 
-# Urban Sketchs Gallery
+# Urban Sketches Gallery
 
 <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:12px;">
 
