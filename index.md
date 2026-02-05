@@ -62,6 +62,7 @@ We also experimented with a contrastive (pairwise) Siamese CNN: given two painti
 
 
 ## Off the Clock
+
 Personal projects and creative work (drawing, photography, and more).
 A collection of personal projects and creative work outside research (drawing, photography, and more).
 
@@ -71,6 +72,7 @@ A collection of personal projects and creative work outside research (drawing, p
   <p><strong>Pencil drawings</strong> — Done with graphite pencils (HB, 2B, 4B). <a href="/pencil_gallery">Gallery</a></p>
 </div>
 
+---
 
 <div style="overflow:auto; margin-bottom:12px;">
   <img src="Urban_sketches.png" alt="urban"
