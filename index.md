@@ -1,12 +1,4 @@
 
----
-layout: default
----
-
-<h1>Azmi Haider</h1>
-
-<link rel="stylesheet" href="assets/style.css">
-
 <table>
   <tr>
     <td style="vertical-align: top; padding-right: 20px;">
@@ -27,6 +19,7 @@ layout: default
 </table>
 
 <hr>
+
 
 
 [Publications](#publications)     [Contact](#contact)
