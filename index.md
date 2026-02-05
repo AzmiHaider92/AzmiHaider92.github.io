@@ -41,6 +41,15 @@ I am interested in:
 
 ---
 
+## Fun projects
+
+<img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/PainterByNumber.png" alt="Painter" width="35%" />
+**Painter by Numbers (Kaggle)** — Our solution to the Kaggle “Painter by Numbers” competition, where the goal is to learn an artist’s painting style. We train a network to embed each painting into a 2048-D feature vector and structure the embedding space so paintings by the same artist cluster together (smaller Euclidean distance) than paintings by different artists.
+Links: [Competition](https://www.kaggle.com/c/painter-by-numbers), [Solution](https://github.com/AzmiHaider92/PainterByNumbers)
+<p style="clear: left;"></p><hr style="height:1px;">
+
+---
+
 ## Contact
 
 azmi.haider92@gmail.com  
