@@ -22,6 +22,10 @@ I am interested in:
 
 ## Research
 
+<img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/tokenDiffusion.png" alt="WhatLearn" width="35%" />
+**What Can We Learn from Depth Camera Sensor Noise?** - In this work [OpenReview](https://openreview.net/forum?id=41LUVIstlH) (NeurIPS-W 2025), we introduce Tokenized Neural Fields (TNF), a unified framework that represents continuous signals using a compact set of learnable tokens that interact with coordinate queries via cross-attention. By decoupling the representation from the decoder architecture, TNF enables scalable training across modalities, efficient adaptation to new signals, and probabilistic inference directly in token space. We validate TNF on 1D regression, 2D image reconstruction, and 3D scene modeling, achieving higher fidelity with fewer parameters than encoder- or latent-based baselines, and show emergent token specialization plus generative modeling when paired with diffusion transformers.
+<p style="clear: left;"></p><hr style="height:1px;">
+
 <img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/WhatCanWeLearn.png" alt="WhatLearn" width="35%" />
 **What Can We Learn from Depth Camera Sensor Noise?** - In this work [CVF](https://www.mdpi.com/1424-8220/22/14/5448) (Sensors 2022), we show that depth-camera sensor noise—often ignored or treated as something to denoise—contains rich information about the captured scene. From noise patterns alone, we can infer an object’s depth and location, identify the camera type (and even the specific device), and estimate scene cues such as light direction; we also demonstrate applications like distinguishing real vs. masked faces. Finally, we show that depth-shadow (missing-depth) size depends on scene geometry and can be used to authenticate an object’s placement in the scene.
 <p style="clear: left;"></p><hr style="height:1px;">
