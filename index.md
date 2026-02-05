@@ -3,7 +3,7 @@
 
 <img style="float: left; margin: 0px 20px 20px 0px; max-width: 270px;" src="/profile.jpg" alt="Azmi A. Haider" width="50%" />
 
-**PhD researcher** at the University of Haifa, advised by [Dan Rosenbaum](https://danrsm.github.io/), working on computer vision and generative modeling (diffusion/flows, token-based implicit representations).
+**PhD researcher** at the University of Haifa, advised by [Dan Rosenbaum](https://danrsm.github.io/), working on computer vision and generative modeling (diffusion/flows, token-based implicit representations) [Thesis to be uploaded soon].
 Before my PhD, I completed an M.Sc. <a href="/MSC_Dissertation___Forgery_Detection_in_Depth_Images.pdf">[thesis]</a> in computer science at the University of Haifa and a B.Sc. in electrical engineering at the Technion.
 
 
