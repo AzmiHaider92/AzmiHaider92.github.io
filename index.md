@@ -9,6 +9,16 @@ Before my PhD, I completed an M.Sc. <a href="/MSC_Dissertation___Forgery_Detecti
 
 
 
+
+
+
+
+
+
+
+
+
+
 ### Interests
 - Diffusion/flow-based generative models
 - Learning continuous and discrete representations of continuous signals
