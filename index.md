@@ -1,18 +1,18 @@
-# Your Name
+# Azmi A. Haider
 
 <img src="assets/profile.jpg" alt="Your Name" width="180">
 
-One-sentence role line (e.g., PhD researcher in computer vision & generative modeling at ...).
+PhD researcher in computer vision and generative modeling (diffusion/flows, token-based implicit representations) at the University of Haifa.
+Before my PhD, I completed an M.Sc. (research) in computer science at the University of Haifa and a B.Sc. in electrical engineering at the Technion – Israel Institute of Technology. 
 
-Before X, I did Y at Z. I’m interested in A, B, and C.
 
 [Publications](#publications)     [Contact](#contact)
 
 I’m interested in:
-- topic 1
-- topic 2
-- topic 3
-
+- Diffusion/flow-based generative models.
+- Learning continuous and discrete representations of continuous signals.
+- Fast amortized inference for probabilistic inference.
+- Computer vision with deep learning (representation learning, generative models)  
 ---
 
 ## Research
