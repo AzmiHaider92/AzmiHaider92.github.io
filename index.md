@@ -55,7 +55,7 @@ We also experimented with a contrastive (pairwise) Siamese CNN: given two painti
 <p style="clear: left;"></p><hr style="height:1px;">
 
 
-<img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/breakout_best.mp4" alt="atari" width="35%" />
+<img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/breakout_best.gif" alt="atari" width="35%" />
 **RL Agents for Breakout & CartPole** — Implemented reinforcement-learning agents to play Breakout and CartPole Atari games, training policies from interaction with the environment and evaluating learning curves and performance across runs.
 [Code](https://github.com/AzmiHaider92/RL)
 <p style="clear: left;"></p><hr style="height:1px;">
