@@ -12,14 +12,7 @@ Before my PhD, I completed an M.Sc. <a href="/MSC_Dissertation___Forgery_Detecti
 
 <p style="clear: left;"></p>
 
-I am interested in computational models of perception, 3D scene understanding, simulation-based inference and machine learning for scientific discovery. I mainly take generative approaches that model perception as a probabilistic inverse problem. 
-- learning models of 3D scenes that can be used for probabilistic inference.
-- learning continuous and discrete representations of continuous signals.
-- amortizing simulation-based inference. 
-- scientific dicovery using flexible probabilisit modeling of the data acquisition process.
-
-
-### Interests
+I am interested in:
 - Diffusion/flow-based generative models
 - Learning continuous and discrete representations of continuous signals
 - Fast amortized inference for probabilistic inference
