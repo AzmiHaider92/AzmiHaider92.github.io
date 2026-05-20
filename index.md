@@ -79,6 +79,13 @@ A collection of personal projects and creative work outside research (drawing, p
 </div>
 
 
+<div style="overflow:auto; margin-bottom:12px;">
+  <img src="sketch_journal.png" alt="pen"
+       style="float:left; margin:0 20px 12px 0; width:400px; border-radius:10px;">
+  <p><strong>Sketch Journal</strong> — Everyday items journaling. Done with Micron pens.<a href="/sketch_journal">Gallery</a></p>
+</div>
+
+
 ## Contact
 
 azmi.haider92@gmail.com  
