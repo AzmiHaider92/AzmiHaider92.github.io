@@ -68,21 +68,21 @@ A collection of personal projects and creative work outside research (drawing, p
 <div style="overflow:auto; margin-bottom:12px;">
   <img src="pencil_drawings.png" alt="pencil"
        style="float:left; margin:0 20px 12px 0; width:400px; border-radius:10px;">
-  <p><strong>Pencil drawings</strong> — Done with graphite pencils (HB, 2B, 4B). <a href="/pencil_gallery">Gallery</a></p>
+  <p><strong>Pencil drawings</strong> — Done with graphite pencils (HB, 2B, 4B). <a href="/pencil_gallery">See full gallery</a></p>
 </div>
 
 
 <div style="overflow:auto; margin-bottom:12px;">
   <img src="Urban_sketches.png" alt="urban"
        style="float:left; margin:0 20px 12px 0; width:400px; border-radius:10px;">
-  <p><strong>Urban Sketches Gallery</strong> — A tour of some of the places I sketched while visiting. Done with Pens and Markers.<a href="/urban_sketches_gallery">Gallery</a></p>
+  <p><strong>Urban Sketches Gallery</strong> — A tour of some of the places I sketched while visiting. Done with Pens and Markers. <a href="/urban_sketches_gallery">See full gallery</a></p>
 </div>
 
 
 <div style="overflow:auto; margin-bottom:12px;">
   <img src="sketch_journal.png" alt="pen"
        style="float:left; margin:0 20px 12px 0; width:400px; border-radius:10px;">
-  <p><strong>Sketch Journal</strong> — Everyday items journaling. Done with Micron pens.<a href="/sketch_journal_gallery">Gallery</a></p>
+  <p><strong>Sketch Journal</strong> — Everyday items journaling. Done with Micron pens. <a href="/sketch_journal_gallery">See full gallery</a></p>
 </div>
 
 
