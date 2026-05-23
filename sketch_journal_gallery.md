@@ -46,7 +46,9 @@ title: Sketch Journal Gallery
     <img src="/sketch_journal/Lulu.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
   </a>
 
-  
+  <a href="/sketch_journal/Knight.jpg" style="display:block; width:100%; aspect-ratio:1/1; overflow:hidden; border-radius:10px;">
+    <img src="/sketch_journal/Knight.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
+  </a>
 
   
 
