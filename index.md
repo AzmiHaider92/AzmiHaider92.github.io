@@ -6,7 +6,7 @@
 **PhD researcher** at the University of Haifa, advised by [Dr. Dan Rosenbaum](https://danrsm.github.io/), working on computer vision and generative modeling with a focus on fast probabilistic inference and guided generation with token-based neural representations (expected graduation: August, 2026). Research includes controllable generative processes across modalities, including 3D scene understanding and view synthesis <a href="/PhD_Thesis.pdf">[thesis]</a>.
 Before my PhD, I completed an M.Sc. <a href="/MSC_Dissertation___Forgery_Detection_in_Depth_Images.pdf">[thesis]</a> in computer science at the University of Haifa and a B.Sc. in electrical engineering at the Technion. During my B.Sc. and M.Sc., I worked at Intel Corporation as an intern in various computer vision and deep learning positions.
 
-[Publications](https://scholar.google.com/citations?user=RyPu18oAAAAJ&hl=en)  &nbsp;&nbsp;&nbsp; [Contact](#contact) &nbsp;&nbsp;&nbsp; <a href="/Azmi_A__Haider_CV_international.pdf">CV</a>
+[Publications](https://scholar.google.com/citations?user=RyPu18oAAAAJ&hl=en)  &nbsp;&nbsp;&nbsp; [Contact](#contact) &nbsp;&nbsp;&nbsp; <a href="/Azmi_A_Haider_CV.pdf">CV</a>
 
 
 <p style="clear: left;"></p>
@@ -43,7 +43,7 @@ I am interested in:
 ## Fun Academic Projects
 
 <img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/PainterByNumber.png" alt="Painter" width="35%" />
-**Painter by Numbers ([Kaggle Competition](https://www.kaggle.com/c/painter-by-numbers))** — Our solution to the Kaggle “Painter by Numbers” competition, where the goal is to learn an artist’s painting style. We used a Siamese (triplet) CNN with shared weights to learn an artist-style embedding. Each training step samples an anchor painting from artist A, a positive painting from the same artist A, and a negative painting from a different artist B. The network maps each image to a feature vector, and we train with triplet loss to pull anchor–positive embeddings closer while pushing anchor–negative embeddings farther apart, producing a feature space where each artist forms a cluster.
+**Painter by Numbers ([Kaggle Competition](https://www.kaggle.com/c/painter-by-numbers))** — My solution to the Kaggle “Painter by Numbers” competition, where the goal is to learn an artist’s painting style. We used a Siamese (triplet) CNN with shared weights to learn an artist-style embedding. Each training step samples an anchor painting from artist A, a positive painting from the same artist A, and a negative painting from a different artist B. The network maps each image to a feature vector, and we train with triplet loss to pull anchor–positive embeddings closer while pushing anchor–negative embeddings farther apart, producing a feature space where each artist forms a cluster.
 We also experimented with a contrastive (pairwise) Siamese CNN: given two paintings and a binary label (same artist / different artist), we use contrastive loss to minimize the distance for same-artist pairs and increase it for different-artist pairs. Pairs are sampled by first choosing the label, then selecting paintings accordingly (two from one artist vs. one from each of two artists).
 [Code](https://github.com/AzmiHaider92/PainterByNumbers)
 <p style="clear: left;"></p><hr style="height:1px;">
