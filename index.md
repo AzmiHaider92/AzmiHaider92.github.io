@@ -61,9 +61,10 @@ We also experimented with a contrastive (pairwise) Siamese CNN: given two painti
 
 ---
 
-## Off the Clock
+## Unplugged
 
-A collection of personal projects and creative work outside research (drawing, photography, and more).
+When I'm away from the keyboard, I enjoy sketching with graphite pencils, fineliners, and markers. Here's a collection of some of that work.
+
 
 <div style="overflow:auto; margin-bottom:12px;">
   <img src="pencil_drawings.png" alt="pencil"
