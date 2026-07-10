@@ -22,7 +22,7 @@ I am interested in:
 ## Research
 
 <img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/dfnp.png" alt="Post" width="35%" />
-**Direct Flow Neural Processes: Efficient Sampling via Flow Step Amortization** - In this [work](https://openreview.net/forum?id=7dkPGrmEMN) (ICML-W 2026), ADD LATER.
+**Direct Flow Neural Processes: Efficient Sampling via Flow Step Amortization** - In this [work](https://openreview.net/forum?id=7dkPGrmEMN) (ICML-W 2026), ADD DESCRIPTION LATER.
 <p style="clear: left;"></p><hr style="height:1px;">
 
 
