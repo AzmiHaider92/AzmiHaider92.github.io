@@ -22,7 +22,7 @@ I am interested in:
 ## Research
 
 <img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/dfnp.png" alt="Post" width="35%" />
-**Direct Flow Neural Processes: Efficient Sampling via Flow Step Amortization** - In this [work](https://openreview.net/forum?id=7dkPGrmEMN) (ICML-W 2026), ADD DESCRIPTION LATER.
+**Direct Flow Neural Processes: Efficient Sampling via Flow Step Amortization** - In this [work](https://openreview.net/forum?id=7dkPGrmEMN) (ICML-W 2026), we introduce Direct Flow Neural Processes (D-FlowNP), a framework for efficient inference in flow-based Neural Processes. By amortizing iterative flow inference, D-FlowNP enables accurate posterior sampling using only a fraction of the original inference steps. Experiments on Gaussian processes, image completion, scientific datasets, and Bayesian optimization show that D-FlowNP achieves substantial speedups while maintaining the predictive quality of the underlying flow-based model.
 <p style="clear: left;"></p><hr style="height:1px;">
 
 
