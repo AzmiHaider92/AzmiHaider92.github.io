@@ -21,6 +21,11 @@ I am interested in:
 
 ## Research
 
+<img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/dfnp.png" alt="Post" width="35%" />
+**Direct Flow Neural Processes: Efficient Sampling via Flow Step Amortization** - In this [work](https://openreview.net/forum?id=7dkPGrmEMN) (ICML-W 2026), ADD LATER.
+<p style="clear: left;"></p><hr style="height:1px;">
+
+
 <img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/post.png" alt="Post" width="35%" />
 **Predicting 3D Structure by Latent Posterior Sampling** - In this [work](https://arxiv.org/abs/2605.10830) (ICLR-W 2025), we combine a NeRF-based 3D scene representation with diffusion models to treat 3D reconstruction as probabilistic inference under uncertainty. We model the scene as a stochastic latent variable, learn a prior over latents with a diffusion model, and perform posterior sampling using score-based inference guided by a rendering-based likelihood term. Using a two-stage training pipeline (reconstruction model first, diffusion prior second), we demonstrate posterior sampling for reconstruction from diverse observation types, including single-view/multi-view images, noisy inputs, sparse pixels, and sparse depth, while capturing the varying uncertainty across these settings.
 <p style="clear: left;"></p><hr style="height:1px;">
