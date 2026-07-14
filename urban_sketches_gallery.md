@@ -7,6 +7,10 @@ title: Urban Sketches Gallery
 <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:12px;">
 
   <a href="/urban_sketches_gallery/La-sigrada.png" style="display:block; width:100%; aspect-ratio:1/1; overflow:hidden; border-radius:10px;">
+    <img src="/urban_sketches_gallery/SKtemple.png" style="width:100%; height:100%; object-fit:cover; display:block;">
+  </a>
+  
+  <a href="/urban_sketches_gallery/La-sigrada.png" style="display:block; width:100%; aspect-ratio:1/1; overflow:hidden; border-radius:10px;">
     <img src="/urban_sketches_gallery/La-sigrada.png" style="width:100%; height:100%; object-fit:cover; display:block;">
   </a>
 
