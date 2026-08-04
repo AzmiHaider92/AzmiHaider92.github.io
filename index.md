@@ -9,8 +9,13 @@ Before my PhD, I completed an M.Sc. <a href="/MSC_Dissertation___Forgery_Detecti
 [Publications](https://scholar.google.com/citations?user=RyPu18oAAAAJ&hl=en)  &nbsp;&nbsp;&nbsp; [Contact](#contact) &nbsp;&nbsp;&nbsp; <a href="/Azmi_A_Haider_CV.pdf">CV</a>
 
 
-<img style="float: left; margin: 0px 20px 20px 0px; max-width: 270px;" src="/horizontalposters.png" alt="Azmi A. Haider" width="50%" />
-
+<div style="clear: both; width: 100%;">
+  <img
+    src="/horizontalposters.png"
+    alt="Research posters"
+    style="display: block; width: 100%; height: auto;"
+  />
+</div>
 
 <p style="clear: left;"></p>
 
