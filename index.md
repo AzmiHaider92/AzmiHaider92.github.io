@@ -48,7 +48,7 @@ I am interested in:
 
 
 <img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/3dSensor.png" alt="Forgery" width="35%" />
-**Forgery detection in 3D-sensor images** - In this [work](https://openaccess.thecvf.com/content_cvpr_2018_workshops/w32/html/Privman-Horesh_Forgery_Detection_in_CVPR_2018_paper.html) (CVPRW 2018), we introduce the problem of forgery detection in depth images as 3D cameras with depth sensors become increasingly common. We present an initial study showing that depth-image noise statistics can be leveraged for camera source identification and forgery detection. We also demonstrate that these noise cues can support depth reconstruction from noise.
+**Forgery detection in 3D-sensor images** - In this [work](https://openaccess.thecvf.com/content_cvpr_2018_workshops/w32/html/Privman-Horesh_Forgery_Detection_in_CVPR_2018_paper.html) (CVPR 2018), we introduce the problem of forgery detection in depth images as 3D cameras with depth sensors become increasingly common. We present an initial study showing that depth-image noise statistics can be leveraged for camera source identification and forgery detection. We also demonstrate that these noise cues can support depth reconstruction from noise.
 <p style="clear: left;"></p><hr style="height:1px;">
 
 ---
