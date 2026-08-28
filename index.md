@@ -103,7 +103,7 @@ When I'm away from the keyboard, I enjoy sketching with graphite pencils, fineli
 ## Contact
 
 azmi.haider92@gmail.com  
-[Google Scholar](https://scholar.google.com/citations?user=RyPu18oAAAAJ&hl=en) · [GitHub](https://github.com/AzmiHaider92) · [LinkedIn](https://www.linkedin.com/in/azmi-haider-305383314/)
+[Google Scholar](https://scholar.google.com/citations?user=RyPu18oAAAAJ&hl=en) · [GitHub](https://github.com/AzmiHaider92) · [LinkedIn](https://www.linkedin.com/in/azmi-haider-305383314/) · [X/Twitter]([https://www.linkedin.com/in/azmi-haider-305383314/](https://x.com/Azmi_A_Haider)
 
 
 
