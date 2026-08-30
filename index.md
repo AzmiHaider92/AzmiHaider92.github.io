@@ -3,8 +3,9 @@
 
 <img style="float: left; margin: 0px 20px 20px 0px; max-width: 270px;" src="/profile.jpg" alt="Azmi A. Haider" width="19%" />
 
-**PhD researcher** at the University of Haifa, advised by [Dr. Dan Rosenbaum](https://danrsm.github.io/), working on computer vision and generative modeling with a focus on fast probabilistic inference and guided generation with token-based neural representations (expected graduation: August, 2026). Research includes controllable generative processes across modalities, including 3D scene understanding and view synthesis <a href="/PhD_Thesis.pdf">[thesis]</a>.
-Before my PhD, I completed an M.Sc. <a href="/MSC_Dissertation___Forgery_Detection_in_Depth_Images.pdf">[thesis]</a> in computer science at the University of Haifa and a B.Sc. in electrical engineering at the Technion. During my B.Sc. and M.Sc., I worked at Intel Corporation as an intern in various computer vision and deep learning positions.
+**PhD candidate** at the University of Haifa, advised by [Dr. Dan Rosenbaum](https://danrsm.github.io/), working at the intersection of computer vision, generative modeling, and neural representations. My research focuses on learning compact representations of continuous signals and developing efficient methods for reconstruction and probabilistic inference from sparse or incomplete observations (expected graduation: November 2026). My work spans token-based neural fields, diffusion and flow-based generative models, and applications including 3D scene reconstruction, novel-view synthesis, physical fields, and image modeling <a href="/PhD_Thesis.pdf">[thesis]</a>.
+
+Before my PhD, I completed an M.Sc. in Computer Science at the University of Haifa <a href="/MSC_Dissertation___Forgery_Detection_in_Depth_Images.pdf">[thesis]</a> and a B.Sc. in Electrical Engineering at the Technion. During my B.Sc. and M.Sc., I worked at Intel Corporation in several computer vision and deep learning roles.
 
 [Publications](https://scholar.google.com/citations?user=RyPu18oAAAAJ&hl=en)  &nbsp;&nbsp;&nbsp; [Contact](#contact) &nbsp;&nbsp;&nbsp; <a href="/Azmi_A_Haider_CV.pdf">CV</a>
 
