@@ -7,7 +7,7 @@
 
 Before my PhD, I completed an M.Sc. in Computer Science at the University of Haifa <a href="/MSC_Dissertation___Forgery_Detection_in_Depth_Images.pdf">[thesis]</a> and a B.Sc. in Electrical Engineering at the Technion. During my B.Sc. and M.Sc., I worked at Intel Corporation in several computer vision and deep learning roles.
 
-[Publications](https://scholar.google.com/citations?user=RyPu18oAAAAJ&hl=en) · <a href="/Azmi_A_Haider_CV.pdf">CV</a> · [Contact](#contact)
+[Email](azmi.haider92@gmail.com) · [Google Scholar](https://scholar.google.com/citations?user=RyPu18oAAAAJ&hl=en) · <a href="/Azmi_A_Haider_CV.pdf">CV</a> · [X](https://x.com/Azmi_A_Haider)· [GitHub](https://github.com/AzmiHaider92)
 
 
 <div style="clear: both; width: 100%;">
@@ -99,12 +99,6 @@ When I'm away from the keyboard, I enjoy sketching with graphite pencils, fineli
        style="float:left; margin:0 20px 12px 0; width:400px; border-radius:10px;">
   <p><strong>Sketch Journal</strong> — Everyday items journaling. Done with Micron pens. <a href="/sketch_journal_gallery">See full gallery</a></p>
 </div>
-
-
-## Contact
-
-azmi.haider92@gmail.com  
-[Google Scholar](https://scholar.google.com/citations?user=RyPu18oAAAAJ&hl=en) · [GitHub](https://github.com/AzmiHaider92) · [LinkedIn](https://www.linkedin.com/in/azmi-haider-305383314/) · [X](https://x.com/Azmi_A_Haider)
-
+ 
 
 
