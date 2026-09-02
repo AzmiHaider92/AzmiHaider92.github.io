@@ -7,7 +7,7 @@
 
 Before my PhD, I completed an M.Sc. in Computer Science at the University of Haifa <a href="/MSC_Dissertation___Forgery_Detection_in_Depth_Images.pdf">[thesis]</a> and a B.Sc. in Electrical Engineering at the Technion. During my B.Sc. and M.Sc., I worked at Intel Corporation in several computer vision and deep learning roles.
 
-[Publications](https://scholar.google.com/citations?user=RyPu18oAAAAJ&hl=en)  / &nbsp;&nbsp;&nbsp; <a href="/Azmi_A_Haider_CV.pdf">CV</a>  / &nbsp;&nbsp;&nbsp; [Contact](#contact)
+[Publications](https://scholar.google.com/citations?user=RyPu18oAAAAJ&hl=en) · <a href="/Azmi_A_Haider_CV.pdf">CV</a> · [Contact](#contact)
 
 
 <div style="clear: both; width: 100%;">
