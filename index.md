@@ -20,11 +20,14 @@ I also hold an M.Sc. in Computer Science from the University of Haifa <a href="/
 
 <p style="clear: left;"></p>
 
-I am interested in:
-- Diffusion/flow-based generative models
-- Learning continuous and discrete representations of continuous signals
-- Fast amortized inference for probabilistic inference
-- Computer vision with deep learning (representation learning, generative models)
+**Research interests**
+
+- **Generative models for reconstruction:** diffusion and flow-based models that reconstruct and generate images, depth, and 3D scenes from sparse or incomplete observations.
+- **Representations of continuous signals:** learning continuous and discrete (tokenized) representations that are compact, structured, and efficient to use.
+- **Fast amortized inference:** making probabilistic inference fast enough for real-world and large-scale use.
+- **Deep learning for computer vision:** representation learning and generative modeling for visual data.
+
+I'm interested in research and applied roles in both industry and academia, particularly where generative modeling and computer vision are built into real products.
 
 ---
 
