@@ -20,7 +20,9 @@ I also hold an M.Sc. in Computer Science from the University of Haifa <a href="/
 
 <p style="clear: left;"></p>
 
-**Research interests**
+---
+
+## Research Interests
 
 - **Generative models for reconstruction:** diffusion and flow-based models that reconstruct and generate images, depth, and 3D scenes from sparse or incomplete observations.
 - **Representations of continuous signals:** learning continuous and discrete (tokenized) representations that are compact, structured, and efficient to use.
