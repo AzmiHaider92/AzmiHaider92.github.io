@@ -1,0 +1,60 @@
+:root {
+  color-scheme: light;
+  --ink: #202733;
+  --muted: #515b69;
+  --accent: #174e86;
+  --line: #dce3ea;
+  --background: #fbfcfe;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--ink);
+  font: 1rem/1.65 system-ui, sans-serif;
+}
+.frame { width: min(100% - 3rem, 58rem); margin-inline: auto; }
+.site-header { background: white; border-bottom: 1px solid var(--line); }
+.header-inner { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.site-name { font-size: 1.08rem; font-weight: 750; color: var(--ink); text-decoration: none; }
+nav { display: flex; gap: 1.4rem; }
+nav a {
+  border-bottom: 3px solid transparent;
+  padding: 1rem .12rem .85rem;
+  color: var(--muted);
+  font-weight: 600;
+  text-decoration: none;
+}
+nav a:hover { color: var(--accent); }
+nav a[aria-current="page"] { border-color: var(--accent); color: var(--accent); }
+a { color: var(--accent); text-underline-offset: .17em; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.skip { position: fixed; top: .5rem; left: .5rem; padding: .5rem; background: white; transform: translateY(-200%); }
+.skip:focus { transform: none; }
+main { padding-block: clamp(2rem, 6vw, 4rem); }
+h1 { margin: 0 0 1.5rem; font-size: clamp(2.3rem, 5vw, 3.75rem); line-height: 1.08; letter-spacing: -.045em; }
+h2 { margin-top: 2rem; font-size: 1.4rem; }
+p { margin: 0 0 1.15rem; }
+li + li { margin-top: .4rem; }
+img { max-width: 100%; height: auto; }
+.about img { border-radius: .6rem; }
+.about h2 { clear: both; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+.posters { margin: 0 0 2rem; }
+.posters img { border: 1px solid var(--line); border-radius: .5rem; }
+.entry, .unplugged main > div, main.unplugged > div {
+  display: flow-root;
+  border-top: 1px solid var(--line);
+  padding-block: 1.3rem;
+}
+.entry p:last-child, main.unplugged > div p:last-child { margin-bottom: 0; }
+.entry img { border-radius: .45rem; }
+@media (max-width: 36rem) {
+  .frame { width: calc(100% - 2rem); }
+  .header-inner { flex-direction: column; align-items: flex-start; gap: 0; padding-top: .7rem; }
+  nav { width: 100%; justify-content: space-between; gap: .3rem; }
+  nav a { padding-top: .7rem; font-size: .9rem; }
+  .about img { width: 5.5rem; }
+  .entry img { max-width: 35% !important; margin-right: .75rem !important; }
+  main.unplugged > div img { float: none !important; margin-right: 0 !important; }
+}
