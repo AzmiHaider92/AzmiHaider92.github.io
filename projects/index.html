@@ -3,32 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects | Azmi Haider</title>
-  <link rel="stylesheet" href="../portfolio.css">
+  <meta http-equiv="refresh" content="0; url=../research/#fun-projects">
+  <title>Fun Projects | Azmi Haider</title>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="frame header-inner">
-      <a class="site-name" href="../">Azmi Haider</a>
-      <nav aria-label="Main navigation"><a href="../">About</a><a href="../research/">Research</a><a href="../projects/" aria-current="page">Projects</a><a href="../unplugged/">Unplugged</a></nav>
-    </div>
-  </header>
-  <main class="frame projects" id="main">
-    <h1 id="projects">Projects</h1>
-<article class="entry">
-<p><img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/PainterByNumber.png" alt="Painter" width="35%" /></p>
-<p><strong>Painter by Numbers (<a href="https://www.kaggle.com/c/painter-by-numbers">Kaggle Competition</a>)</strong> — My solution to the Kaggle “Painter by Numbers” competition, where the goal is to learn an artist’s painting style. We used a Siamese (triplet) CNN with shared weights to learn an artist-style embedding. Each training step samples an anchor painting from artist A, a positive painting from the same artist A, and a negative painting from a different artist B. The network maps each image to a feature vector, and we train with triplet loss to pull anchor–positive embeddings closer while pushing anchor–negative embeddings farther apart, producing a feature space where each artist forms a cluster. We also experimented with a contrastive (pairwise) Siamese CNN: given two paintings and a binary label (same artist / different artist), we use contrastive loss to minimize the distance for same-artist pairs and increase it for different-artist pairs. Pairs are sampled by first choosing the label, then selecting paintings accordingly (two from one artist vs. one from each of two artists). <a href="https://github.com/AzmiHaider92/PainterByNumbers">Code</a></p>
-</article>
-<article class="entry">
-<p><img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/rgb_maps.gif" alt="perfectloop" width="35%" /></p>
-<p><strong>Perfect-Loop GIFs with NeRF</strong> — A small project to turn a GIF into a seamless “perfect loop” by reconstructing the scene with a NeRF and re-rendering frames along a closed camera path so the first and last frames match smoothly. Pipeline: extract frames → estimate camera poses with COLMAP → train NeRF with TensoRF → render along a circular loop → export the new GIF. <a href="https://github.com/AzmiHaider92/Perfect-loop-gif-nerf">Code</a></p>
-</article>
-<article class="entry">
-<p><img style="float: left; margin: 0px 20px 20px 0px; max-width: 200px;" src="/breakout_best.gif" alt="atari" width="35%" /></p>
-<p><strong>RL Agents for Breakout &amp; CartPole</strong> — Implemented reinforcement-learning agents to play Breakout and CartPole Atari games, training policies from interaction with the environment and evaluating learning curves and performance across runs. <a href="https://github.com/AzmiHaider92/RL">Code</a></p>
-</article>
-
-  </main>
+  <p>Fun Projects have moved to <a href="../research/#fun-projects">Research</a>.</p>
 </body>
 </html>
