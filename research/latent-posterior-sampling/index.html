@@ -7,7 +7,7 @@
   <title>Predicting 3D Structure by Latent Posterior Sampling | Azmi Haider</title>
   <link rel="stylesheet" href="../../portfolio.css">
   <link rel="stylesheet" href="../tnf/project.css">
-  <link rel="stylesheet" href="./project.css">
+  <link rel="stylesheet" href="./project.css?v=architecture">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -54,8 +54,8 @@
         <li><strong>Sample given observations.</strong> Guide denoising with a likelihood gradient computed by comparing predictions from the frozen reconstruction model with the available measurements.</li>
       </ol>
       <figure class="method-figure">
-        <a href="./media/triplane-decoder.webp"><img src="./media/triplane-decoder.webp" width="642" height="365" loading="lazy" alt="Triplane features are queried along a camera ray and decoded to color and density for volumetric rendering."></a>
-        <figcaption>The shared renderer reads scene-specific triplane features to render a latent from any camera pose.</figcaption>
+        <a href="./media/reconstruction-architecture.webp"><img src="./media/reconstruction-architecture.webp" width="1280" height="500" loading="lazy" alt="The scene latent is decoded into three feature planes. A second decoder predicts color and density along each camera ray, and volumetric rendering produces the pixel color."></a>
+        <figcaption>Figure 2 from the paper. The full reconstruction architecture maps a scene latent and camera rays to rendered pixels.</figcaption>
       </figure>
     </section>
     <section aria-labelledby="observations">
