@@ -37,8 +37,10 @@
 .reconstruction-rows figcaption { border-bottom: 1px solid var(--line); }
 .comparison-labels {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   padding: .5rem 0;
+  align-items: center;
+  line-height: 1.2;
   background: #f1f6fc;
   color: var(--ink);
   text-align: center;
@@ -65,7 +67,14 @@
   font-weight: 500;
 }
 .paired-labels .comparison-labels {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 1.2%;
+  column-gap: 1.205%;
   font-size: clamp(.65rem, 1.65vw, .9rem);
+}
+
+.era5-reconstruction .comparison-labels { column-gap: .888%; }
+@media (max-width: 42rem) {
+  .paired-labels .comparison-labels span {
+    padding-inline: .1rem;
+    text-wrap: balance;
+  }
 }
