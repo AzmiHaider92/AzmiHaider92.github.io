@@ -43,15 +43,18 @@
       <h2 id="reconstruction">Reconstruction from sparse observations</h2>
       <p>TNF fits a token set to the available measurements and uses it to reconstruct the full field. The comparisons below show how TNF and the grid baseline reconstruct the same sparse input.</p>
       <div class="reconstruction-rows">
-        <figure>
-          <figcaption><strong>Black hole</strong> · 10% of pixels observed</figcaption>
-          <div class="comparison-labels"><span>Sparse input</span><span>TNF</span><span>Grid baseline</span></div>
-          <a href="./figures/black-hole-reconstruction.webp"><img src="./figures/black-hole-reconstruction.webp" width="353" height="117" loading="lazy" alt="Sparse observations, TNF reconstruction, and grid reconstruction of a simulated black-hole image."></a>
-        </figure>
-        <figure>
-          <figcaption><strong>Navier–Stokes</strong> · 1% of points observed</figcaption>
-          <div class="comparison-labels"><span>Sparse input</span><span>TNF</span><span>Grid baseline</span></div>
-          <a href="./figures/navier-stokes-reconstruction.webp"><img src="./figures/navier-stokes-reconstruction.webp" width="354" height="109" loading="lazy" alt="Sparse observations, TNF reconstruction, and grid reconstruction of a Navier–Stokes vorticity snapshot."></a>
+        <figure class="paired-reconstructions">
+          <div class="paired-labels">
+            <div>
+              <h3>Black hole <span>10% observed</span></h3>
+              <div class="comparison-labels"><span>Sparse input</span><span>TNF</span><span>Grid baseline</span></div>
+            </div>
+            <div>
+              <h3>Navier–Stokes <span>1% observed</span></h3>
+              <div class="comparison-labels"><span>Sparse input</span><span>TNF</span><span>Grid baseline</span></div>
+            </div>
+          </div>
+          <a href="./figures/black-hole-navier-stokes.webp"><img src="./figures/black-hole-navier-stokes.webp" width="1016" height="664" loading="lazy" alt="Four black-hole examples on the left and four Navier–Stokes vorticity examples on the right. Each dataset shows sparse input, TNF reconstruction, and the grid baseline in three columns."></a>
         </figure>
         <figure>
           <figcaption><strong>ERA5 temperature</strong> · 2% of points observed</figcaption>

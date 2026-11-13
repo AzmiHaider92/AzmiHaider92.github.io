@@ -46,3 +46,25 @@
   font-weight: 650;
 }
 .project .reconstruction-chart { margin: 1rem auto 0; max-width: 43rem; }
+
+.paired-labels {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.36%;
+  text-align: center;
+}
+.paired-labels h3 {
+  margin: 0;
+  padding: .55rem .15rem;
+  font-size: clamp(.8rem, 2vw, 1rem);
+}
+.paired-labels h3 span {
+  display: block;
+  color: var(--muted);
+  font-size: .8em;
+  font-weight: 500;
+}
+.paired-labels .comparison-labels {
+  gap: 1.61%;
+  font-size: clamp(.65rem, 1.65vw, .9rem);
+}
