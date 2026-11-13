@@ -1,0 +1,39 @@
+.project { --panel: #fff; }
+.project-hero {
+  margin-bottom: 2rem;
+  padding: clamp(1.2rem, 4vw, 2.8rem);
+  border: 1px solid var(--line);
+  border-radius: .9rem;
+  background: linear-gradient(135deg, #f1f6fc, #fff 74%);
+}
+.back-link { display: inline-block; margin-bottom: 1.2rem; font-size: .9rem; }
+.project h1 { margin-bottom: 1rem; }
+.project h1 span {
+  display: block;
+  margin-top: .55rem;
+  font-size: clamp(1.2rem, 3vw, 1.85rem);
+  font-weight: 550;
+  letter-spacing: -.02em;
+  line-height: 1.25;
+}
+.authors { font-weight: 650; }
+.authors span { display: block; color: var(--muted); font-size: .9rem; font-weight: 450; }
+.summary, .project section > p { max-width: 70ch; }
+.project .contact-links { margin-bottom: 0; }
+.project .contact-links a { background: white; }
+.project .contact-links a:hover { background: #edf4fc; }
+.project section + section { margin-top: 2rem; padding-top: .25rem; border-top: 1px solid var(--line); }
+.project h2 { margin: 1.2rem 0 .55rem; }
+.project figure {
+  margin: 0;
+  padding: clamp(.6rem, 2vw, 1.15rem);
+  border: 1px solid var(--line);
+  border-radius: .7rem;
+  background: var(--panel);
+}
+.project figure a { display: block; }
+.project figure img { display: block; width: 100%; object-fit: contain; }
+.project figcaption { margin-top: .7rem; font-size: .87rem; color: var(--muted); }
+.figure-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.project figure + .figure-grid { margin-top: 1rem; }
+@media (max-width: 42rem) { .figure-grid { grid-template-columns: 1fr; } }

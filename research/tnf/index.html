@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tokenized Neural Fields represent continuous signals with learnable tokens for sparse reconstruction, posterior sampling, and generation.">
+  <title>Tokenized Neural Fields | Azmi Haider</title>
+  <link rel="stylesheet" href="../../portfolio.css">
+  <link rel="stylesheet" href="./project.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="frame header-inner">
+      <a class="site-name" href="../../">Azmi Haider</a>
+      <nav aria-label="Main navigation"><a href="../../">About</a><a href="../">Research</a><a href="../../unplugged/">Unplugged</a></nav>
+    </div>
+  </header>
+  <main class="frame project" id="main">
+    <header class="project-hero">
+      <a class="back-link" href="../">← Research</a>
+      <h1>Tokenized Neural Fields<span>Structured Representations of Continuous Signals</span></h1>
+      <p class="authors">Azmi Haider · <a href="https://danrsm.github.io/">Dan Rosenbaum</a> <span>University of Haifa</span></p>
+      <p class="summary">A continuous signal can be represented by a small set of learnable tokens. A shared decoder reads those tokens at any query coordinate, making the same representation useful for reconstructing sparse observations, sampling plausible completions, and generating new signals.</p>
+      <div class="contact-links" role="group" aria-label="Project resources">
+        <a href="https://openreview.net/pdf/83dc2b5e715be7e74bca948f3421c64c59170b4e.pdf">Workshop paper (PDF)</a>
+        <a href="https://github.com/AzmiHaider92/tnf">Code</a>
+        <a href="https://github.com/AzmiHaider92/tnf/blob/main/data/README.md">Data instructions</a>
+        <a href="https://github.com/AzmiHaider92/tnf/blob/main/REPRODUCE.md">Reproduce experiments</a>
+      </div>
+    </header>
+
+    <section aria-labelledby="method">
+      <h2 id="method">How TNF works</h2>
+      <p>Each signal has its own token set. The decoder uses cross-attention to read the tokens at a given coordinate. For a new signal, the decoder stays fixed and gradient descent fits its tokens to the available coordinate–value pairs, including scattered measurements.</p>
+      <figure>
+        <a href="./figures/architecture.webp"><img src="./figures/architecture.webp" width="966" height="363" alt="A coordinate queries instance-specific tokens through a shared cross-attention decoder. During training, the reconstruction loss updates the tokens and decoder."></a>
+        <figcaption>During training, the reconstruction loss updates both the token set and the shared decoder.</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="results">
+      <h2 id="results">Reconstruction and posterior sampling</h2>
+      <p>We compare TNF with grid interpolation and per-instance SIREN on 1D waves, simulated black-hole images, Navier–Stokes vorticity, and ERA5 weather fields. With a learned prior over token sets, TNF can also draw multiple reconstructions conditioned on the same observations.</p>
+      <div class="figure-grid">
+        <figure>
+          <a href="./figures/sparse-fields.webp"><img src="./figures/sparse-fields.webp" width="1500" height="1463" loading="lazy" alt="Reconstruction error by observation density across four datasets, comparing TNF, three grid interpolants, and SIREN."></a>
+          <figcaption>Reconstruction error as the fraction of observed points decreases. Select the figure to see it at full size.</figcaption>
+        </figure>
+        <figure>
+          <a href="./figures/posterior-samples.webp"><img src="./figures/posterior-samples.webp" width="1500" height="874" loading="lazy" alt="For black-hole images, vorticity and ERA5, rows show sparse observations, the posterior mean, predictive standard deviation, two samples, and ground truth."></a>
+          <figcaption>Posterior predictions with 1–2% of points observed. The predictive standard deviation shows where reconstructions vary most.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section aria-labelledby="generation">
+      <h2 id="generation">Generation and token specialization</h2>
+      <p>A Diffusion Transformer trained on fitted token sets can generate new sets that the shared decoder turns into images or 3D scenes. Cross-attention maps also show that individual tokens can specialize to similar regions across instances.</p>
+      <figure>
+        <a href="./figures/generated-faces.webp"><img src="./figures/generated-faces.webp" width="1450" height="510" loading="lazy" alt="Twelve generated face images with varied appearances and expressions."></a>
+        <figcaption>Unconditional face samples decoded from generated TNF tokens.</figcaption>
+      </figure>
+      <div class="figure-grid">
+        <figure>
+          <a href="./figures/generated-scenes.webp"><img src="./figures/generated-scenes.webp" width="670" height="380" loading="lazy" alt="Rendered samples of generated 3D cars with different shapes and colors."></a>
+          <figcaption>Unconditional samples from a generative model of 3D scene tokens.</figcaption>
+        </figure>
+        <figure>
+          <a href="./figures/token-specialization.webp"><img src="./figures/token-specialization.webp" width="853" height="565" loading="lazy" alt="Attention maps showing how different tokens attend to regions of cars across several scenes."></a>
+          <figcaption>Each row tracks one token across multiple car scenes.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
