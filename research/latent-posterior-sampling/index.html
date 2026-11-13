@@ -48,14 +48,31 @@
     </section>
     <section aria-labelledby="method">
       <h2 id="method">How latent posterior sampling works</h2>
-      <ol>
-        <li><strong>Learn 3D scene latents.</strong> Jointly optimize a shared neural renderer and a triplane latent for each training scene.</li>
-        <li><strong>Train a diffusion prior.</strong> Fit a denoising model to the learned scene latents.</li>
-        <li><strong>Sample given observations.</strong> Guide denoising with a likelihood gradient computed by comparing predictions from the frozen reconstruction model with the available measurements.</li>
-      </ol>
-      <figure class="method-figure">
+      <p>Training has two stages. First, we learn a reconstruction model and a latent code for each training scene. Then we train a diffusion prior on those codes. At inference, the diffusion prior proposes plausible scenes and the reconstruction model guides them toward the observed data.</p>
+
+      <h3>Stage 1 · Train the reconstruction model and scene latents</h3>
+      <p>We jointly optimize a shared reconstruction model and one latent code per training scene. The model decodes each code into three feature planes and renders pixels from known camera poses. The rendering error updates both the model and the codes.</p>
+      <figure>
         <a href="./media/reconstruction-architecture.webp"><img src="./media/reconstruction-architecture.webp" width="1280" height="500" loading="lazy" alt="The scene latent is decoded into three feature planes. A second decoder predicts color and density along each camera ray, and volumetric rendering produces the pixel color."></a>
-        <figcaption>Figure 2 from the paper. The full reconstruction architecture maps a scene latent and camera rays to rendered pixels.</figcaption>
+        <figcaption>Figure 2. The reconstruction model maps a scene latent and camera rays to rendered pixels.</figcaption>
+      </figure>
+      <figure>
+        <a href="./media/novel-view-reconstruction.webp"><img src="./media/novel-view-reconstruction.webp" width="968" height="248" loading="lazy" alt="Ground-truth and reconstructed novel views of SRN cars on top and Objaverse chairs below."></a>
+        <figcaption>Figure 3. For held-out scenes, we freeze the reconstruction model, fit a latent code to observed views, and render novel views. Each pair shows ground truth on the left and reconstruction on the right.</figcaption>
+      </figure>
+
+      <h3>Stage 2 · Train a diffusion prior over the latents</h3>
+      <p>We train a denoising diffusion model on the scene codes learned in Stage 1. Starting from noise, the prior can sample a new scene code, which the reconstruction model renders from multiple viewpoints.</p>
+      <figure>
+        <a href="./media/diffusion-prior-samples.webp"><img src="./media/diffusion-prior-samples.webp" width="1288" height="536" loading="lazy" alt="Unconditional samples of cars and chairs. Each row shows multiple views of one sampled 3D scene."></a>
+        <figcaption>Figure 4. Unconditional samples from the diffusion prior. Cars are on the left and chairs on the right. Each row shows a different scene rendered from multiple views.</figcaption>
+      </figure>
+
+      <h3>Stage 3 · Sample the posterior given observations</h3>
+      <p>Starting from noise, we alternate a diffusion denoising step with a correction based on the observations. We render an estimate of the clean latent at the observed camera pose, compare the prediction with the measurements, and backpropagate the reconstruction loss to steer the latent. Repeating the process from different noise draws gives multiple plausible scenes for the same input.</p>
+      <figure>
+        <a href="./media/posterior-sampling-algorithm.webp"><img src="./media/posterior-sampling-algorithm.webp" width="1496" height="512" loading="lazy" alt="Algorithm 1 lists the posterior sampling updates on the left. The diagram on the right shows one denoising step guided by reconstruction loss."></a>
+        <figcaption>Figure 5. Algorithm 1 is on the left. The diagram on the right shows how the reconstruction loss guides one denoising step.</figcaption>
       </figure>
     </section>
     <section aria-labelledby="observations">
