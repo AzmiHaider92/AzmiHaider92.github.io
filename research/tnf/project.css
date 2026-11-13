@@ -50,7 +50,7 @@
 .paired-labels {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 2.36%;
+  gap: 1.77%;
   text-align: center;
 }
 .paired-labels h3 {
@@ -65,6 +65,7 @@
   font-weight: 500;
 }
 .paired-labels .comparison-labels {
-  gap: 1.61%;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.2%;
   font-size: clamp(.65rem, 1.65vw, .9rem);
 }
