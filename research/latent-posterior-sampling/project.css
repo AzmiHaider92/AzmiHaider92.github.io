@@ -1,0 +1,12 @@
+.posterior-project .demo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.posterior-project .demo-grid figure { margin: 0; }
+.posterior-project video { display: block; width: 100%; height: auto; background: white; }
+.posterior-project .method-figure img { width: min(100%, 42rem); margin-inline: auto; }
+@media (max-width: 38rem) {
+  .posterior-project .demo-grid { grid-template-columns: 1fr; }
+}

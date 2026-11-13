@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Latent posterior sampling combines a NeRF renderer with a diffusion prior to reconstruct plausible 3D scenes from partial observations.">
+  <title>Predicting 3D Structure by Latent Posterior Sampling | Azmi Haider</title>
+  <link rel="stylesheet" href="../../portfolio.css">
+  <link rel="stylesheet" href="../tnf/project.css">
+  <link rel="stylesheet" href="./project.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="frame header-inner">
+      <a class="site-name" href="../../">Azmi Haider</a>
+      <nav aria-label="Main navigation"><a href="../../">About</a><a href="../">Research</a><a href="../../unplugged/">Unplugged</a></nav>
+    </div>
+  </header>
+  <main class="frame project posterior-project" id="main">
+    <header class="project-hero">
+      <a class="back-link" href="../">← Research</a>
+      <h1>Predicting 3D Structure by Latent Posterior Sampling</h1>
+      <p class="authors">Azmi Haider · <a href="https://danrsm.github.io/">Dan Rosenbaum</a> <span>University of Haifa · FPI Workshop at ICLR 2025</span></p>
+      <p>What does the rest of a 3D object look like when you only see part of it? We combine a NeRF-based renderer with a diffusion prior over 3D scene latents to sample plausible reconstructions from partial observations.</p>
+      <div class="contact-links" role="group" aria-label="Project resources">
+        <a href="https://arxiv.org/pdf/2605.10830">Paper (PDF)</a>
+        <a href="https://arxiv.org/abs/2605.10830">arXiv</a>
+      </div>
+    </header>
+    <section aria-labelledby="samples">
+      <h2 id="samples">One observation, multiple 3D scenes</h2>
+      <p>Different chair shapes can agree with the same observed image. Each posterior sample is a complete 3D scene latent, so it can be rendered from new camera angles.</p>
+      <div class="demo-grid">
+        <figure>
+          <video controls muted loop playsinline preload="metadata" width="480" height="160" aria-label="First rotating reconstruction of a partially observed chair" src="./media/chair-a.mp4"></video>
+          <figcaption>Posterior sample 1</figcaption>
+        </figure>
+        <figure>
+          <video controls muted loop playsinline preload="metadata" width="480" height="160" aria-label="Second rotating reconstruction of the same partially observed chair" src="./media/chair-b.mp4"></video>
+          <figcaption>Posterior sample 2</figcaption>
+        </figure>
+      </div>
+      <figure>
+        <a href="./media/single-view-chairs.webp"><img src="./media/single-view-chairs.webp" width="1202" height="387" loading="lazy" alt="Posterior samples of Objaverse chairs given one observed view. Less informative viewpoints lead to more variation in legs, armrests, and backrests."></a>
+        <figcaption>Across Objaverse chair examples, less informative viewpoints leave more room for variation in the reconstructed geometry.</figcaption>
+      </figure>
+    </section>
+    <section aria-labelledby="method">
+      <h2 id="method">How latent posterior sampling works</h2>
+      <ol>
+        <li><strong>Learn 3D scene latents.</strong> Jointly optimize a shared neural renderer and a triplane latent for each training scene.</li>
+        <li><strong>Train a diffusion prior.</strong> Fit a denoising model to the learned scene latents.</li>
+        <li><strong>Sample given observations.</strong> Guide denoising with a likelihood gradient computed by comparing predictions from the frozen reconstruction model with the available measurements.</li>
+      </ol>
+      <figure class="method-figure">
+        <a href="./media/triplane-decoder.webp"><img src="./media/triplane-decoder.webp" width="642" height="365" loading="lazy" alt="Triplane features are queried along a camera ray and decoded to color and density for volumetric rendering."></a>
+        <figcaption>The shared renderer reads scene-specific triplane features to render a latent from any camera pose.</figcaption>
+      </figure>
+    </section>
+    <section aria-labelledby="observations">
+      <h2 id="observations">Reconstruction from different observations</h2>
+      <p>The same learned prior supports half images, sparse RGB pixels, and sparse depth measurements by changing the likelihood at inference time. In the examples below, the hidden half of an image has higher uncertainty, while sparse depth constrains shape and leaves appearance uncertain.</p>
+      <figure>
+        <a href="./media/observation-types.webp"><img src="./media/observation-types.webp" width="1129" height="653" loading="lazy" alt="Examples of reconstruction from half an image, 5% of RGB pixels, and 5% of depth pixels, with posterior samples and uncertainty maps."></a>
+        <figcaption>Each task shows the observation, three posterior samples from two viewpoints, and uncertainty estimated from ten samples.</figcaption>
+      </figure>
+    </section>
+  </main>
+</body>
+</html>
