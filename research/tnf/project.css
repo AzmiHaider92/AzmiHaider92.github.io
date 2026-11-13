@@ -18,7 +18,6 @@
 }
 .authors { font-weight: 650; }
 .authors span { display: block; color: var(--muted); font-size: .9rem; font-weight: 450; }
-.summary, .project section > p { max-width: 70ch; }
 .project .contact-links { margin-bottom: 0; }
 .project .contact-links a { background: white; }
 .project .contact-links a:hover { background: #edf4fc; }
@@ -32,8 +31,10 @@
   background: var(--panel);
 }
 .project figure a { display: block; }
-.project figure img { display: block; width: 100%; object-fit: contain; }
+.project figure img { display: block; margin-inline: auto; }
 .project figcaption { margin-top: .7rem; font-size: .87rem; color: var(--muted); }
-.figure-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
-.project figure + .figure-grid { margin-top: 1rem; }
-@media (max-width: 42rem) { .figure-grid { grid-template-columns: 1fr; } }
+.reconstruction-rows { display: grid; gap: .75rem; }
+.reconstruction-rows figure { padding-block: .75rem; }
+.reconstruction-rows figcaption { margin: 0 0 .45rem; }
+.reconstruction-rows img { width: min(100%, 42rem); }
+.project .reconstruction-chart { margin: 1rem auto 0; max-width: 43rem; }
