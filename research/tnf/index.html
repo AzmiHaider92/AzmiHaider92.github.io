@@ -41,19 +41,22 @@
 
     <section aria-labelledby="reconstruction">
       <h2 id="reconstruction">Reconstruction from sparse observations</h2>
-      <p>TNF fits a token set to the available measurements and uses it to reconstruct the full field. Each row shows the sparse input, the TNF reconstruction, and the grid baseline, from left to right.</p>
+      <p>TNF fits a token set to the available measurements and uses it to reconstruct the full field. The comparisons below show how TNF and the grid baseline reconstruct the same sparse input.</p>
       <div class="reconstruction-rows">
         <figure>
           <figcaption><strong>Black hole</strong> · 10% of pixels observed</figcaption>
+          <div class="comparison-labels"><span>Sparse input</span><span>TNF</span><span>Grid baseline</span></div>
           <a href="./figures/black-hole-reconstruction.webp"><img src="./figures/black-hole-reconstruction.webp" width="353" height="117" loading="lazy" alt="Sparse observations, TNF reconstruction, and grid reconstruction of a simulated black-hole image."></a>
         </figure>
         <figure>
           <figcaption><strong>Navier–Stokes</strong> · 1% of points observed</figcaption>
+          <div class="comparison-labels"><span>Sparse input</span><span>TNF</span><span>Grid baseline</span></div>
           <a href="./figures/navier-stokes-reconstruction.webp"><img src="./figures/navier-stokes-reconstruction.webp" width="354" height="109" loading="lazy" alt="Sparse observations, TNF reconstruction, and grid reconstruction of a Navier–Stokes vorticity snapshot."></a>
         </figure>
         <figure>
           <figcaption><strong>ERA5 temperature</strong> · 2% of points observed</figcaption>
-          <a href="./figures/era5-reconstruction.webp"><img src="./figures/era5-reconstruction.webp" width="1414" height="384" loading="lazy" alt="Sparse observations, TNF reconstruction, and grid reconstruction of a ERA5 temperature field."></a>
+          <div class="comparison-labels"><span>Sparse input</span><span>TNF</span><span>Grid baseline</span></div>
+          <a href="./figures/era5-reconstruction.webp"><img src="./figures/era5-reconstruction.webp" width="1414" height="384" loading="lazy" alt="Sparse observations, TNF reconstruction, and grid reconstruction of an ERA5 temperature field."></a>
         </figure>
       </div>
       <figure class="reconstruction-chart">
@@ -82,7 +85,11 @@
 
     <section aria-labelledby="specialization">
       <h2 id="specialization">Token specialization</h2>
-      <p>Cross-attention maps show how individual tokens attend to similar regions across different car scenes.</p>
+      <p>Cross-attention maps show how individual tokens attend to similar regions across different faces and car scenes.</p>
+      <figure>
+        <a href="./figures/face-token-specialization.webp"><img src="./figures/face-token-specialization.webp" width="1200" height="400" loading="lazy" alt="Two rows of CelebA attention maps showing two different tokens across the same six faces."></a>
+        <figcaption>CelebA face specialization. Each row follows one token across six held-out faces, highlighting regions such as the area below the eyes and the mouth.</figcaption>
+      </figure>
       <figure>
         <a href="./figures/token-specialization.webp"><img src="./figures/token-specialization.webp" width="853" height="565" loading="lazy" alt="Attention maps showing how different tokens attend to regions of cars across several scenes."></a>
         <figcaption>Each row tracks one token across multiple car scenes.</figcaption>
