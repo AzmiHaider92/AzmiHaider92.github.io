@@ -9,3 +9,23 @@
 @media (max-width: 38rem) {
   .posterior-project .demo-grid { grid-template-columns: 1fr; }
 }
+
+.posterior-project .observation-labels {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding: .45rem .2rem;
+  background: #f1f6fc;
+  font-size: .85rem;
+  font-weight: 650;
+  text-align: center;
+}
+.posterior-project .posterior-equation {
+  margin: 0 0 1rem;
+  padding: .65rem .85rem;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: .5rem;
+  background: white;
+  font-family: Georgia, serif;
+  text-align: center;
+}
