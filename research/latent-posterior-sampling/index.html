@@ -91,9 +91,20 @@
     <section aria-labelledby="observations">
       <h2 id="observations">Reconstruction from different observations</h2>
       <p>The same learned prior supports half images, sparse RGB pixels, and sparse depth measurements by changing the likelihood at inference time. In the examples below, the hidden half of an image has higher uncertainty, while sparse depth constrains shape and leaves appearance uncertain.</p>
+      <h3>Half-image observations</h3>
       <figure>
-        <a href="./media/observation-types.webp"><img src="./media/observation-types.webp" width="1129" height="653" loading="lazy" alt="Examples of reconstruction from half an image, 5% of RGB pixels, and 5% of depth pixels, with posterior samples and uncertainty maps."></a>
-        <figcaption>Each task shows the observation, three posterior samples from two viewpoints, and uncertainty estimated from ten samples.</figcaption>
+        <div class="observation-labels" style="grid-template-columns: 1fr repeat(3, 1fr)"><span>Observation</span><span>Sample 1</span><span>Sample 2</span><span>Sample 3</span></div>
+        <video controls muted loop playsinline preload="none" width="512" height="256" aria-label="Half-image observations and rotating reconstructions for two examples" poster="./media/half-image-reconstructions.webp" src="./media/half-image-reconstructions.mp4"></video>
+      </figure>
+      <h3>Sparse RGB pixels</h3>
+      <figure>
+        <div class="observation-labels" style="grid-template-columns: 1fr repeat(2, 1.5fr)"><span>Observation</span><span>Sample 1</span><span>Sample 2</span></div>
+        <video controls muted loop playsinline preload="none" width="512" height="256" aria-label="Sparse RGB pixels and rotating reconstructions for two examples" poster="./media/sparse-rgb-reconstructions.webp" src="./media/sparse-rgb-reconstructions.mp4"></video>
+      </figure>
+      <h3>Sparse depth measurements</h3>
+      <figure>
+        <div class="observation-labels" style="grid-template-columns: 1fr repeat(3, 1fr)"><span>Observation</span><span>Sample 1</span><span>Sample 2</span><span>Sample 3</span></div>
+        <video controls muted loop playsinline preload="none" width="512" height="256" aria-label="Sparse depth measurements and rotating reconstructions for two examples" poster="./media/sparse-depth-reconstructions.webp" src="./media/sparse-depth-reconstructions.mp4"></video>
       </figure>
     </section>
   </main>
