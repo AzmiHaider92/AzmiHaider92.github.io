@@ -7,6 +7,20 @@
   <title>Tokenized Neural Fields | Azmi Haider</title>
   <link rel="stylesheet" href="../../portfolio.css">
   <link rel="stylesheet" href="./project.css?v=reconstruction-labels">
+  <style>
+    .reconstruction-pair {
+      display: grid;
+      grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+      align-items: start;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .project .reconstruction-pair figure { margin: 0; }
+    .reconstruction-pair figcaption:first-child { border-bottom: 1px solid var(--line); }
+    @media (max-width: 42rem) {
+      .reconstruction-pair { grid-template-columns: minmax(0, 1fr); }
+    }
+  </style>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -56,16 +70,19 @@
           </div>
           <a href="./figures/black-hole-navier-stokes-ground-truth.webp"><img src="./figures/black-hole-navier-stokes-ground-truth.webp" width="1352" height="664" loading="lazy" alt="Four black-hole examples on the left and four Navier–Stokes vorticity examples on the right. Each dataset shows ground truth, sparse input, TNF reconstruction, and the grid baseline in four columns."></a>
         </figure>
-        <figure class="era5-reconstruction" style="max-width: 36rem; margin-inline: auto">
-          <figcaption><strong>ERA5 temperature</strong> · 2% of points observed</figcaption>
+      </div>
+      <div class="reconstruction-pair">
+        <figure class="era5-reconstruction">
+          <figcaption><strong>ERA5 temperature reconstruction</strong> · 2% observed</figcaption>
           <div class="comparison-labels"><span>Ground <wbr>truth</span><span>Sparse <wbr>input</span><span>TNF</span><span>Grid <wbr>baseline</span></div>
           <a href="./figures/era5-four-examples.webp"><img src="./figures/era5-four-examples.webp" width="1000" height="1079" loading="lazy" alt="Ground truth, sparse observations, TNF reconstruction, and grid baseline for four ERA5 temperature fields."></a>
         </figure>
+        <figure>
+          <figcaption><strong>Reconstruction error by observation density</strong></figcaption>
+          <a href="./figures/sparse-fields.webp"><img src="./figures/sparse-fields.webp" width="1500" height="1463" loading="lazy" alt="Reconstruction error by observation density across four datasets, comparing TNF, three grid interpolants, and SIREN."></a>
+          <figcaption>Test mean squared error for 1D waves, black-hole images, Navier–Stokes vorticity, and ERA5.</figcaption>
+        </figure>
       </div>
-      <figure class="reconstruction-chart">
-        <a href="./figures/sparse-fields.webp"><img src="./figures/sparse-fields.webp" width="1500" height="1463" loading="lazy" alt="Reconstruction error by observation density across four datasets, comparing TNF, three grid interpolants, and SIREN."></a>
-        <figcaption>Test mean squared error by observation density for 1D waves, black-hole images, Navier–Stokes vorticity, and ERA5.</figcaption>
-      </figure>
     </section>
 
     <section aria-labelledby="posterior">
