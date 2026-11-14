@@ -30,14 +30,14 @@
     </header>
     <section aria-labelledby="samples">
       <h2 id="samples">Sparse observation, full consistent 3D scene</h2>
-      <p>Each car example shows the observed half of the ground-truth view alongside a complete reconstruction. The same reconstructed 3D scene is rendered as the camera rotates.</p>
+      <p>The car examples show reconstructions from a single image and from a partial image. Each reconstruction can be rendered from new viewpoints.</p>
       <div class="demo-grid">
         <figure>
-          <div class="observation-labels"><span>Observed left half</span><span>Reconstruction</span></div>
-          <video controls muted loop playsinline preload="none" width="512" height="256" aria-label="Car reconstruction from the left half of the ground-truth view" poster="./media/left-half-car.webp" src="./media/left-half-car.mp4"></video>
+          <div class="observation-labels" style="grid-template-columns: 1fr 2fr"><span>One image only</span><span>Reconstruction</span></div>
+          <img src="./media/one-image-only.gif" width="384" height="128" loading="lazy" alt="One observed car image followed by two rendered views of its reconstruction.">
         </figure>
         <figure>
-          <div class="observation-labels"><span>Observed right half</span><span>Reconstruction</span></div>
+          <div class="observation-labels"><span>Observed partial image</span><span>Reconstruction</span></div>
           <video controls muted loop playsinline preload="none" width="512" height="256" aria-label="Car reconstruction from the right half of the ground-truth view" poster="./media/right-half-car.webp" src="./media/right-half-car.mp4"></video>
         </figure>
       </div>
