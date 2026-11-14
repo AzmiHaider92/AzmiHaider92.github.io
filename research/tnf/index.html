@@ -21,6 +21,8 @@
       .reconstruction-pair { grid-template-columns: minmax(0, 1fr); }
     }
   </style>
+  <link rel="stylesheet" href="../bibtex.css">
+  <script defer src="../bibtex.js"></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -34,10 +36,11 @@
     <header class="project-hero">
       <a class="back-link" href="../">← Research</a>
       <h1>Tokenized Neural Fields<span>Structured Representations of Continuous Signals</span></h1>
-      <p class="authors">Azmi Haider · <a href="https://danrsm.github.io/">Dan Rosenbaum</a> <span>University of Haifa</span></p>
+      <p class="authors">Azmi Haider · <a href="https://danrsm.github.io/">Dan Rosenbaum</a> <span>University of Haifa · Structured Probabilistic Inference &amp; Generative Modeling Workshop at NeurIPS 2025</span></p>
       <p class="summary">A continuous signal can be represented by a small set of learnable tokens. A shared decoder reads those tokens at any query coordinate, making the same representation useful for reconstructing sparse observations, sampling plausible completions, and generating new signals.</p>
       <div class="contact-links" role="group" aria-label="Project resources">
         <a href="https://openreview.net/pdf/83dc2b5e715be7e74bca948f3421c64c59170b4e.pdf">Workshop paper (PDF)</a>
+        <a href="https://neurips.cc/virtual/2025/loc/san-diego/125512">NeurIPS workshop page</a>
         <a href="https://github.com/AzmiHaider92/tnf">Code</a>
         <a href="https://github.com/AzmiHaider92/tnf/blob/main/data/README.md">Data instructions</a>
         <a href="https://github.com/AzmiHaider92/tnf/blob/main/REPRODUCE.md">Reproduce experiments</a>
@@ -114,6 +117,22 @@
         <a href="./figures/token-specialization.webp"><img src="./figures/token-specialization.webp" width="853" height="565" loading="lazy" alt="Attention maps showing how different tokens attend to regions of cars across several scenes."></a>
         <figcaption>Each row tracks one token across multiple car scenes.</figcaption>
       </figure>
+    </section>
+    <section aria-labelledby="bibtex">
+      <div class="bibtex-header">
+        <h2 id="bibtex">BibTeX</h2>
+        <div class="contact-links">
+          <button type="button" data-copy-bibtex hidden>Copy BibTeX</button>
+        </div>
+      </div>
+      <pre class="bibtex-entry" tabindex="0"><code>@inproceedings{haider2025tokenized,
+  title     = {Tokenized Neural Fields: Structured Representations of Continuous Signals},
+  author    = {Haider, Azmi and Rosenbaum, Dan},
+  booktitle = {NeurIPS 2025 Workshop on Structured Probabilistic Inference \&amp; Generative Modeling},
+  year      = {2025},
+  url       = {https://neurips.cc/virtual/2025/loc/san-diego/125512}
+}</code></pre>
+      <p class="bibtex-status" role="status"></p>
     </section>
   </main>
 </body>

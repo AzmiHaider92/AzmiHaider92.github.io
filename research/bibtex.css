@@ -1,0 +1,27 @@
+.bibtex-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.bibtex-header [data-copy-bibtex] {
+  padding: .45rem .75rem;
+  border: 1px solid var(--line);
+  border-radius: .4375rem;
+  background: white;
+  color: var(--accent);
+  font: inherit;
+  font-size: .875rem;
+  cursor: pointer;
+}
+.bibtex-header button:hover { border-color: var(--accent); }
+.bibtex-entry {
+  margin: 0;
+  padding: 1rem;
+  overflow: auto;
+  border: 1px solid var(--line);
+  border-radius: .5rem;
+  background: white;
+}
+.bibtex-status { margin-top: .5rem; }
+.bibtex-status:empty { display: none; }
