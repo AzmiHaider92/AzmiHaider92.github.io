@@ -30,21 +30,17 @@
     </header>
     <section aria-labelledby="samples">
       <h2 id="samples">Sparse observation, full consistent 3D scene</h2>
-      <p>The car examples show reconstructions from a single image and from a partial image. Each reconstruction can be rendered from new viewpoints.</p>
+      <p>The car and chair examples show reconstructions from partial images. Each reconstruction can be rendered from new viewpoints.</p>
       <div class="demo-grid">
-        <figure>
-          <div class="observation-labels"><span>One image only</span><span>Reconstruction</span></div>
-          <img src="./media/one-image-only-animated.gif" width="256" height="128" loading="lazy" alt="One observed car image alongside its rotating reconstruction.">
-        </figure>
         <figure>
           <div class="observation-labels"><span>Observed partial image</span><span>Reconstruction</span></div>
           <video controls muted loop playsinline preload="none" width="512" height="256" aria-label="Car reconstruction from the right half of the ground-truth view" poster="./media/right-half-car.webp" src="./media/right-half-car.mp4"></video>
         </figure>
+        <figure>
+          <div class="observation-labels"><span>Observed partial image</span><span>Reconstruction</span></div>
+          <video controls muted loop playsinline preload="none" width="256" height="128" aria-label="Half-chair observation alongside its rotating reconstruction" poster="./media/half-chair-slide4.webp" src="./media/half-chair-slide4.mp4"></video>
+        </figure>
       </div>
-      <figure>
-        <div class="observation-labels"><span>Observed partial image</span><span>Reconstruction</span></div>
-        <video controls muted loop playsinline preload="none" width="256" height="128" aria-label="Half-chair observation alongside its rotating reconstruction" poster="./media/half-chair-slide4.webp" src="./media/half-chair-slide4.mp4"></video>
-      </figure>
       <h3>Posterior samples</h3>
       <p>Each row starts with one observed view and shows four plausible 3D reconstructions of that same chair.</p>
       <figure>
@@ -54,9 +50,6 @@
       <figure>
         <div class="observation-labels" style="grid-template-columns: repeat(5, minmax(0, 1fr))"><span>Observation</span><span>Sample 1</span><span>Sample 2</span><span>Sample 3</span><span>Sample 4</span></div>
         <video controls muted loop playsinline preload="none" width="640" height="128" aria-label="Observed peach chair and four rotating posterior samples" poster="./media/peach-chair-slide17.webp" src="./media/peach-chair-slide17.mp4"></video>
-      </figure>
-      <figure>
-        <a href="./media/partial-view-chairs.webp"><img src="./media/partial-view-chairs.webp" width="827" height="325" loading="lazy" alt="Two Objaverse chairs shown from ambiguous viewpoints, each with four plausible reconstructions."></a>
       </figure>
     </section>
     <section aria-labelledby="method">
