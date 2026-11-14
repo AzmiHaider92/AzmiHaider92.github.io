@@ -97,6 +97,7 @@
     <section aria-labelledby="observations">
       <h2 id="observations">Reconstruction from different observations</h2>
       <p>The same learned prior supports half images, sparse RGB pixels, and sparse depth measurements by changing the likelihood at inference time. In the examples below, the hidden half of an image has higher uncertainty, while sparse depth constrains shape and leaves appearance uncertain.</p>
+      <p>Because the reconstruction model renders each pixel along its own camera ray, we can compute the guidance loss using only the observed RGB pixels, even when they are scattered across the image. The model also predicts color and volume density separately at 3D points along each ray, so at test time sparse depth can guide the density predictions directly, without RGB measurements or retraining.</p>
       <h3>Half-image observations</h3>
       <figure>
         <div class="observation-labels" style="grid-template-columns: 1fr repeat(3, 1fr)"><span>Observation</span><span>Sample 1</span><span>Sample 2</span><span>Sample 3</span></div>
