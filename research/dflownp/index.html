@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="D-FlowNP learns large flow steps for fast conditional sampling of functions and scientific fields.">
+  <title>Direct Flow Neural Processes | Azmi Haider</title>
+  <link rel="stylesheet" href="../../portfolio.css">
+  <link rel="stylesheet" href="../tnf/project.css">
+  <link rel="stylesheet" href="../bibtex.css">
+  <link rel="stylesheet" href="./project.css">
+  <script defer src="../bibtex.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header"><div class="frame header-inner">
+    <a class="site-name" href="../../">Azmi Haider</a>
+    <nav aria-label="Main navigation"><a href="../../">About</a><a href="../">Research</a><a href="../../unplugged/">Unplugged</a></nav>
+  </div></header>
+  <main class="frame project" id="main">
+    <header class="project-hero">
+      <a href="../">Back to Research</a>
+      <h1>Direct Flow Neural Processes<span>Efficient Sampling via Flow Step Amortization</span></h1>
+      <p class="authors">Azmi A. Haider · <a href="https://danrsm.github.io/">Dan Rosenbaum</a><span>University of Haifa · SPIGM Workshop at ICML 2026</span></p>
+      <p>Given a few observations, a Neural Process predicts a distribution over the missing values. Flow-based models can capture complex, coherent uncertainty, but generating a sample requires repeated network evaluations. D-FlowNP learns to take larger flow steps, producing conditional samples with as few as one evaluation.</p>
+      <div class="contact-links" role="group" aria-label="Project resources">
+        <a href="https://openreview.net/pdf?id=7dkPGrmEMN">Workshop paper (PDF)</a>
+        <a href="https://openreview.net/forum?id=7dkPGrmEMN">OpenReview</a>
+        <a href="https://icml.cc/virtual/2026/74379">ICML workshop presentation</a>
+      </div>
+    </header>
+
+    <section aria-labelledby="few-steps">
+      <h2 id="few-steps">Coherent samples with fewer steps</h2>
+      <p>Both models receive the same context observations. At small sampling budgets, standard FlowNP can lose structure or diversity. D-FlowNP learns the coarse transitions needed to retain coherent samples at low budgets.</p>
+      <figure>
+        <a href="./figures/gp-samples.webp"><img src="./figures/gp-samples.webp" width="1500" height="923" alt="Two function-regression examples comparing FlowNP and D-FlowNP samples at six inference budgets."></a>
+        <figcaption>Two 1D regression tasks. Within each group, the columns show the ground truth and context, FlowNP, and D-FlowNP. Rows run from 1, 2, 4, 8, and 16 to 32 sampling steps, top to bottom. Select any figure to inspect it at full size.</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="method">
+      <h2 id="method">Learn the flow step itself</h2>
+      <p>FlowNP transports noisy target values toward a conditional sample while keeping the observations fixed. D-FlowNP also conditions the network on the requested step size Δt, so it can predict transitions at different computational budgets.</p>
+      <figure>
+        <a href="./figures/architecture.webp"><img src="./figures/architecture.webp" width="1372" height="328" loading="lazy" alt="Context and target tokens are embedded with coordinates, time, and step size before a transformer predicts target velocities."></a>
+        <figcaption>The step size is an input to the embedding. Context tokens hold observed values, while target tokens evolve from noise toward predictions.</figcaption>
+      </figure>
+      <p>During training, one coarse step is matched to two finer steps of the same model. This self-consistency objective is combined with flow matching, teaching the model to approximate a longer segment of the trajectory in a single evaluation.</p>
+      <figure class="training">
+        <a href="./figures/step-training.webp"><img src="./figures/step-training.webp" width="624" height="365" loading="lazy" alt="A student coarse step of size two delta t is trained to agree with two teacher steps of size delta t."></a>
+        <figcaption>One step of size 2Δt learns to agree with two steps of size Δt. A single trained model supports several inference budgets.</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="fields">
+      <h2 id="fields">Sparse observations, structured predictions</h2>
+      <p>In simulated black-hole imaging and Navier–Stokes vorticity fields, the observations leave much of the signal unknown. Multiple samples show the possible completions, and the comparison below exposes how their structure changes with the step budget.</p>
+      <div class="field-grid">
+        <figure>
+          <figcaption><strong>Black-hole imaging</strong></figcaption>
+          <div class="model-labels"><span>FlowNP</span><span>D-FlowNP</span></div>
+          <a href="./figures/black-hole.webp"><img src="./figures/black-hole.webp" width="674" height="441" loading="lazy" alt="Black-hole posterior samples from FlowNP on the left and D-FlowNP on the right at increasing sampling budgets."></a>
+          <figcaption>The left strip contains the full field and sparse observations. Rows show T = 1, 2, 4, 8, 16, 32.</figcaption>
+        </figure>
+        <figure>
+          <figcaption><strong>Navier–Stokes vorticity</strong></figcaption>
+          <div class="model-labels"><span>FlowNP</span><span>D-FlowNP</span></div>
+          <a href="./figures/navier-stokes.webp"><img src="./figures/navier-stokes.webp" width="676" height="433" loading="lazy" alt="Navier–Stokes field samples comparing FlowNP and D-FlowNP, with six rows of increasing inference steps."></a>
+          <figcaption>The left strip contains the full field and observed points. Rows show T = 1, 2, 4, 8, 16, 32.</figcaption>
+        </figure>
+      </div>
+      <p>For these Euler comparisons, each sampling step uses one network evaluation, so T equals the number of function evaluations (NFE).</p>
+    </section>
+
+    <section aria-labelledby="budget">
+      <h2 id="budget">Quality across sampling budgets</h2>
+      <p>The low-budget advantage is visible in distributional metrics as well as individual samples. On 1D GP tasks, the comparison measures distributional agreement with MMD and sample quality and diversity with precision and recall.</p>
+      <figure class="metrics">
+        <a href="./figures/quality-budget.webp"><img src="./figures/quality-budget.webp" width="1500" height="967" loading="lazy" alt="MMD, precision, and recall across function-evaluation budgets and context sizes for D-FlowNP and baseline models."></a>
+        <figcaption>Top row shows metrics against NFE. Bottom row compares single-evaluation models across context sizes. Lower MMD and higher precision and recall are better. Curves summarize four independent training runs, with shaded standard deviations.</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="optimization">
+      <h2 id="optimization">Fast sampling inside Bayesian optimization</h2>
+      <p>Sequential decisions repeatedly require new conditional samples. D-FlowNP makes this loop practical at a low evaluation budget. In the Hidden Valley task, its non-Gaussian predictions help locate minima that the Gaussian expected-improvement baseline misses.</p>
+      <figure>
+        <a href="./figures/bayesian-optimization.webp"><img src="./figures/bayesian-optimization.webp" width="1500" height="483" loading="lazy" alt="Regret over optimization iterations for RBF, Matérn, and Hidden Valley tasks, comparing D-FlowNP, FlowNP, TNP, and random search."></a>
+        <figcaption>Optimization regret over successive queries. Lower is better. D-FlowNP and FlowNP each use one sampling step.</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="bibtex">
+      <div class="bibtex-header"><h2 id="bibtex">BibTeX</h2><div class="contact-links"><button type="button" data-copy-bibtex hidden>Copy BibTeX</button></div></div>
+      <pre class="bibtex-entry" tabindex="0"><code>@inproceedings{haider2026direct,
+  title     = {Direct Flow Neural Processes: Efficient Sampling via Flow Step Amortization},
+  author    = {Haider, Azmi A. and Rosenbaum, Dan},
+  booktitle = {SPIGM Workshop at ICML},
+  year      = {2026},
+  url       = {https://openreview.net/forum?id=7dkPGrmEMN}
+}</code></pre>
+      <p class="bibtex-status" role="status"></p>
+    </section>
+  </main>
+</body>
+</html>

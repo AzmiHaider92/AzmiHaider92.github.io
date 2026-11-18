@@ -1,0 +1,9 @@
+.project-hero > a { display: inline-block; margin-bottom: 1.2rem; }
+.project section > p { max-width: none; }
+.project figure img { width: 100%; height: auto; }
+.project .training { max-width: 39rem; margin-inline: auto; }
+.project .metrics { max-width: 47rem; margin-inline: auto; }
+.field-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.project .field-grid figure { margin: 0; }
+.model-labels { display: grid; grid-template-columns: 1fr 1fr; margin-left: 12%; text-align: center; font-size: .875rem; font-weight: 650; padding-block: .4rem; }
+@media (max-width: 42rem) { .field-grid { grid-template-columns: minmax(0, 1fr); } }
