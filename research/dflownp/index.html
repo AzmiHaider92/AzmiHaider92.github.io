@@ -55,7 +55,7 @@
 
     <section aria-labelledby="fields">
       <h2 id="fields">Sparse observations, structured predictions</h2>
-      <p>In simulated black-hole imaging and Navier–Stokes vorticity fields, the observations leave much of the signal unknown. Multiple samples show the possible completions, and the comparison below exposes how their structure changes with the step budget.</p>
+      <p>In simulated black-hole imaging and CelebA image completion, sparse observations leave much of the signal unknown. Multiple samples show the possible completions, and the comparison below exposes how their structure changes with the step budget.</p>
       <div class="field-grid">
         <figure>
           <figcaption><strong>Black-hole imaging</strong></figcaption>
@@ -64,10 +64,10 @@
           <figcaption>The left strip contains the full field and sparse observations. Rows show T = 1, 2, 4, 8, 16, 32.</figcaption>
         </figure>
         <figure>
-          <figcaption><strong>Navier–Stokes vorticity</strong></figcaption>
+          <figcaption><strong>CelebA image completion</strong></figcaption>
           <div class="model-labels"><span>FlowNP</span><span>D-FlowNP</span></div>
-          <a href="./figures/navier-stokes.webp"><img src="./figures/navier-stokes.webp" width="676" height="433" loading="lazy" alt="Navier–Stokes field samples comparing FlowNP and D-FlowNP, with six rows of increasing inference steps."></a>
-          <figcaption>The left strip contains the full field and observed points. Rows show T = 1, 2, 4, 8, 16, 32.</figcaption>
+          <a href="./figures/celeba.webp"><img src="./figures/celeba.webp" width="1365" height="882" loading="lazy" alt="CelebA completions comparing FlowNP on the left and D-FlowNP on the right, with six rows of increasing inference steps."></a>
+          <figcaption>The left strip contains the ground-truth image and observed pixels. Rows show T = 1, 2, 4, 8, 16, 32.</figcaption>
         </figure>
       </div>
       <p>For these Euler comparisons, each sampling step uses one network evaluation, so T equals the number of function evaluations (NFE).</p>
@@ -79,15 +79,6 @@
       <figure class="metrics">
         <a href="./figures/quality-budget.webp"><img src="./figures/quality-budget.webp" width="1500" height="967" loading="lazy" alt="MMD, precision, and recall across function-evaluation budgets and context sizes for D-FlowNP and baseline models."></a>
         <figcaption>Top row shows metrics against NFE. Bottom row compares single-evaluation models across context sizes. Lower MMD and higher precision and recall are better. Curves summarize four independent training runs, with shaded standard deviations.</figcaption>
-      </figure>
-    </section>
-
-    <section aria-labelledby="optimization">
-      <h2 id="optimization">Fast sampling inside Bayesian optimization</h2>
-      <p>Sequential decisions repeatedly require new conditional samples. D-FlowNP makes this loop practical at a low evaluation budget. In the Hidden Valley task, its non-Gaussian predictions help locate minima that the Gaussian expected-improvement baseline misses.</p>
-      <figure>
-        <a href="./figures/bayesian-optimization.webp"><img src="./figures/bayesian-optimization.webp" width="1500" height="483" loading="lazy" alt="Regret over optimization iterations for RBF, Matérn, and Hidden Valley tasks, comparing D-FlowNP, FlowNP, TNP, and random search."></a>
-        <figcaption>Optimization regret over successive queries. Lower is better. D-FlowNP and FlowNP each use one sampling step.</figcaption>
       </figure>
     </section>
 
