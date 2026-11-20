@@ -10,10 +10,10 @@
   <style>
     .about .cv-download { justify-content: center; margin: .5rem 0 0; }
     .cv-download a { background: var(--surface, white); }
-    .profile-intro { display: grid; grid-template-columns: minmax(0, 18rem) minmax(0, 1fr); gap: 1.75rem; align-items: start; }
+    .profile-intro { display: grid; grid-template-columns: minmax(0, 18.25rem) minmax(0, 1fr); gap: 1.75rem; align-items: start; }
     .profile-portrait { display: flex; align-items: flex-start; gap: .75rem; }
-    .profile-photo-column { flex: 1; min-width: 0; max-width: 14rem; }
-    .about .profile-photo { display: block; float: none; width: 100%; max-width: 100%; height: auto; }
+    .profile-photo-column { flex: 1; min-width: 0; max-width: 15rem; }
+    .about .profile-photo { display: block; float: none; width: 100%; max-width: 100%; height: 19.75rem; object-fit: cover; object-position: center; }
     .about .profile-icons { display: flex; flex-direction: column; flex-wrap: nowrap; clear: none; flex: 0 0 2.5rem; gap: .375rem; margin: 0; }
     .profile-icons a { position: relative; justify-content: center; width: 2.5rem; min-height: 2.5rem; padding: .5rem; background: var(--surface, white); }
     .profile-icons svg { width: 1.125rem; height: 1.125rem; }
@@ -21,7 +21,7 @@
     .profile-icons a:hover .profile-tooltip, .profile-icons a:focus-visible .profile-tooltip { display: block; }
     @media (max-width: 46rem) {
       .profile-intro { grid-template-columns: 1fr; gap: 1.5rem; }
-      .profile-portrait { width: min(100%, 18rem); }
+      .profile-portrait { width: min(100%, 18.25rem); }
     }
   </style>
 </head>
