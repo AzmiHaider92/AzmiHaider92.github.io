@@ -12,7 +12,8 @@
     .cv-download a { background: var(--surface, white); }
     .profile-intro { display: grid; grid-template-columns: minmax(0, 18rem) minmax(0, 1fr); gap: 1.75rem; align-items: start; }
     .profile-portrait { display: flex; align-items: flex-start; gap: .75rem; }
-    .about .profile-photo { float: none; width: calc(100% - 3.25rem); max-width: 14rem; height: auto; }
+    .profile-photo-column { flex: 1; min-width: 0; max-width: 14rem; }
+    .about .profile-photo { display: block; float: none; width: 100%; max-width: 100%; height: auto; }
     .about .profile-icons { display: flex; flex-direction: column; flex-wrap: nowrap; clear: none; flex: 0 0 2.5rem; gap: .375rem; margin: 0; }
     .profile-icons a { position: relative; justify-content: center; width: 2.5rem; min-height: 2.5rem; padding: .5rem; background: var(--surface, white); }
     .profile-icons svg { width: 1.125rem; height: 1.125rem; }
@@ -42,20 +43,24 @@
   
   <a href="/PhD_Thesis.pdf" aria-label="PhD Thesis" title="PhD Thesis"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 3h12l4 4v14H4Z"/><path d="M16 3v5h4M8 12h8M8 16h8"/></svg><span class="profile-tooltip">PhD Thesis</span></a>
   <a href="/MSC_Dissertation___Forgery_Detection_in_Depth_Images.pdf" aria-label="MSc Thesis" title="MSc Thesis"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 4h7l2 2 2-2h7v16h-7l-2 2-2-2H3Z"/><path d="M12 6v16M6 9h3m6 0h3"/></svg><span class="profile-tooltip">MSc Thesis</span></a>
+  <a href="https://www.linkedin.com/in/azmi-haider-305383314/" aria-label="LinkedIn" title="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="fill: currentColor; stroke: none"><path d="M5.4 7.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM3.7 9h3.4v12H3.7Zm5.6 0h3.3v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5V21H17v-6c0-1.4 0-3.2-2-3.2s-2.3 1.5-2.3 3.1V21H9.3Z"/></svg><span class="profile-tooltip">LinkedIn</span></a>
   <a href="https://github.com/AzmiHaider92" aria-label="GitHub" title="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3-.3 6.2-1.5 6.2-6.7a5.2 5.2 0 0 0-1.4-3.6A4.9 4.9 0 0 0 18.8 2s-1.1-.3-3.8 1.4a13.3 13.3 0 0 0-7 0C5.3 1.7 4.2 2 4.2 2a4.9 4.9 0 0 0-.1 3.2 5.2 5.2 0 0 0-1.4 3.6c0 5.2 3.2 6.4 6.2 6.7a3.4 3.4 0 0 0-.9 2.6V22"/></svg><span class="profile-tooltip">GitHub</span></a>
   <a href="https://x.com/Azmi_A_Haider" aria-label="Twitter/X" title="Twitter/X"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m4 3 16 18M20 3 4 21M4 3h4l12 18h-4Z"/></svg><span class="profile-tooltip">Twitter/X</span></a>
 </div>
+    <div class="profile-photo-column">
     <img class="profile-photo" src="/profile.jpg" alt="Azmi A. Haider" width="240">
-  </div>
-  <div class="profile-bio">
-<p><strong>PhD in Computer Science</strong> from the University of Haifa, advised by <a href="https://danrsm.github.io/">Dr. Dan Rosenbaum</a>. My research sits at the intersection of computer vision, generative modeling, and neural representations: learning compact representations of continuous signals, and building efficient methods for reconstruction and probabilistic inference from sparse or incomplete observations. My work spans tokenized neural fields and diffusion and flow-based generative models, with applications to 3D scene reconstruction, novel-view synthesis, physical fields, and image modeling.</p>
-<p>I also hold an M.Sc. in Computer Science from the University of Haifa and a B.Sc. in Electrical Engineering from the Technion. Alongside my studies, I worked at Intel on computer vision and deep learning, including 3D cameras, LiDAR, and face recognition.</p>
     <div class="contact-links cv-download">
       <a href="/Azmi_A_Haider_CV.pdf" download>
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>
         Download CV
       </a>
     </div>
+    </div>
+  </div>
+  <div class="profile-bio">
+<p><strong>PhD in Computer Science</strong> from the University of Haifa, advised by <a href="https://danrsm.github.io/">Dr. Dan Rosenbaum</a>. My research sits at the intersection of computer vision, generative modeling, and neural representations: learning compact representations of continuous signals, and building efficient methods for reconstruction and probabilistic inference from sparse or incomplete observations. My work spans tokenized neural fields and diffusion and flow-based generative models, with applications to 3D scene reconstruction, novel-view synthesis, physical fields, and image modeling.</p>
+<p>I also hold an M.Sc. in Computer Science from the University of Haifa and a B.Sc. in Electrical Engineering from the Technion. Alongside my studies, I worked at Intel on computer vision and deep learning, including 3D cameras, LiDAR, and face recognition.</p>
+
   </div>
 </div>
 <h2 id="research-interests">Research Interests</h2>
