@@ -1,0 +1,56 @@
+:root {
+  --surface: #fff;
+  --hover: #edf4fc;
+  --label-surface: #f1f6fc;
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #e3e9f1;
+  --muted: #a9b7c9;
+  --accent: #91c4ff;
+  --line: #354253;
+  --background: #111820;
+  --surface: #1b2531;
+  --hover: #26394e;
+  --label-surface: #233142;
+}
+.header-inner { position: relative; }
+.header-inner nav { margin-left: auto; }
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 2.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--ink);
+  font: 1.35rem/1 system-ui, sans-serif;
+  cursor: pointer;
+}
+.theme-toggle:hover { background: var(--hover); border-color: var(--accent); }
+.theme-toggle:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+:root[data-theme="dark"] .site-header,
+:root[data-theme="dark"] .skip,
+:root[data-theme="dark"] .project-link,
+:root[data-theme="dark"] .project .contact-links a,
+:root[data-theme="dark"] .bibtex-entry,
+:root[data-theme="dark"] .bibtex-header [data-copy-bibtex],
+:root[data-theme="dark"] .posterior-project .posterior-equation {
+  background: var(--surface);
+}
+:root[data-theme="dark"] .project { --panel: var(--surface); }
+:root[data-theme="dark"] .comparison-labels,
+:root[data-theme="dark"] .posterior-project .observation-labels { background: var(--label-surface); }
+:root[data-theme="dark"] .project-link:hover,
+:root[data-theme="dark"] .contact-links a:hover,
+:root[data-theme="dark"] .project .contact-links a:hover { background: var(--hover); }
+@media (max-width: 36rem) {
+  .header-inner { padding-right: 0; }
+  .header-inner nav { margin-left: 0; }
+  .theme-toggle { position: absolute; right: 0; top: .45rem; }
+  .site-name { padding-right: 3rem; }
+}
