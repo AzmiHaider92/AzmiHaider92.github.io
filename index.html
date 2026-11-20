@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="/theme.css?v=1">
   <script src="/theme.js?v=1"></script>
   <style>
-    .about .cv-download { justify-content: center; margin: .5rem 0 0; }
+    .about .cv-download { flex: 1; align-items: center; justify-content: center; margin: 0; padding-block: 1.25rem; }
+    .about #research-interests { margin-top: 0; }
     .cv-download a { background: var(--surface, white); }
-    .profile-intro { display: grid; grid-template-columns: minmax(0, 18.25rem) minmax(0, 1fr); gap: 1.75rem; align-items: start; }
-    .profile-portrait { display: flex; align-items: flex-start; gap: .75rem; }
-    .profile-photo-column { flex: 1; min-width: 0; max-width: 15rem; }
-    .about .profile-photo { display: block; float: none; width: 100%; max-width: 100%; height: 19.75rem; object-fit: cover; object-position: center; }
-    .about .profile-icons { display: flex; flex-direction: column; flex-wrap: nowrap; clear: none; flex: 0 0 2.5rem; gap: .375rem; margin: 0; }
+    .profile-intro { display: grid; grid-template-columns: minmax(0, 18.25rem) minmax(0, 1fr); gap: 1.75rem; align-items: stretch; }
+    .profile-portrait { display: flex; align-items: stretch; gap: .75rem; }
+    .profile-photo-column { display: flex; flex-direction: column; flex: 1; min-width: 0; max-width: 15rem; }
+    .about .profile-photo { display: block; float: none; width: 100%; max-width: 100%; height: 19.75rem; flex-shrink: 0; object-fit: cover; object-position: center; }
+    .about .profile-icons { display: flex; flex-direction: column; flex-wrap: nowrap; clear: none; align-self: flex-start; flex: 0 0 2.5rem; gap: .375rem; margin: 0; }
     .profile-icons a { position: relative; justify-content: center; width: 2.5rem; min-height: 2.5rem; padding: .5rem; background: var(--surface, white); }
     .profile-icons svg { width: 1.125rem; height: 1.125rem; }
     .profile-tooltip { display: none; position: absolute; z-index: 2; left: calc(100% + .5rem); padding: .2rem .5rem; border: 1px solid var(--line); border-radius: .3rem; background: var(--surface, white); color: var(--ink); font-size: .8rem; pointer-events: none; }
