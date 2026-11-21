@@ -30,9 +30,6 @@
     .gallery-preview { height: 13rem; min-height: 0; margin: 0; }
     .gallery-preview img { display: block; width: 100%; height: 100%; object-fit: contain; border-radius: .5rem; }
     .gallery-action { justify-content: center; align-self: end; margin: 0; }
-    .photography-placeholder { border-style: dashed; }
-    .construction-preview { grid-row: 2 / -1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .75rem; color: var(--muted); }
-    .construction-preview svg { width: 2rem; height: 2rem; }
     @media (max-width: 36rem) {
       main.unplugged > .gallery-grid { grid-template-columns: minmax(0, 1fr); }
     }
@@ -83,9 +80,11 @@
         <a href="/sketch_journal_gallery" aria-label="View gallery: Sketch Journal">View gallery <span aria-hidden="true">→</span></a>
       </div>
     </section>
-    <section class="gallery-card photography-placeholder">
+    <section class="gallery-card">
       <h3>Photography</h3>
-      <div class="construction-preview"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 21 12 3l9 18Z" stroke-linejoin="round"/><path d="M12 9v5" stroke-linecap="round"/><circle cx="12" cy="17" r=".8" fill="currentColor" stroke="none"/></svg><span>Under construction</span></div>
+      <p class="gallery-description">Architecture, street scenes, and small details in nature.</p>
+      <figure class="gallery-preview"><img src="/photography_gallery/preview.webp" width="960" height="390" alt="A vintage car, an indoor waterfall, and a shell on the shoreline" loading="lazy"></figure>
+      <div class="contact-links gallery-action"><a href="/photography_gallery/" aria-label="View gallery: Photography">View gallery <span aria-hidden="true">→</span></a></div>
     </section>
     </div>
   </main>
