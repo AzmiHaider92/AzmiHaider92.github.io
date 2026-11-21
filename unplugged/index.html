@@ -17,13 +17,16 @@
       line-height: 1.2;
     }
     .gallery-section > p { color: var(--muted); }
-    .gallery-preview { margin: 0; }
+    .gallery-preview { width: min(100%, 38rem); margin: 1.25rem auto 0; }
     .gallery-preview img {
       display: block;
       width: 100%;
+      height: auto;
+      max-height: 26rem;
+      object-fit: contain;
       border-radius: 10px;
     }
-    .gallery-action { margin: 1rem 0 0; }
+    .gallery-action { justify-content: center; margin: 1rem 0 0; }
   </style>
   <link rel="stylesheet" href="/theme.css?v=1">
   <script src="/theme.js?v=1"></script>
