@@ -37,6 +37,10 @@ permalink: /sketch_journal_gallery/
 <figure><a href="/sketch_journal/Salt_haifa.jpg" aria-label="Open artwork: Salt haifa"><img src="/sketch_journal/Salt_haifa.jpg" alt="Sketch Journal: Salt haifa" loading="lazy" decoding="async"></a></figure>
 <figure><a href="/sketch_journal/Lulu.jpg" aria-label="Open artwork: Lulu"><img src="/sketch_journal/Lulu.jpg" alt="Sketch Journal: Lulu" loading="lazy" decoding="async"></a></figure>
 <figure><a href="/sketch_journal/Knight.jpg" aria-label="Open artwork: Knight"><img src="/sketch_journal/Knight.jpg" alt="Sketch Journal: Knight" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/sketch_journal/myeongdong-night-market.webp" aria-label="Open artwork: Myeongdong night market, Seoul"><img src="/sketch_journal/myeongdong-night-market.webp" alt="Sketch Journal: Myeongdong night market, Seoul" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/sketch_journal/armchair-and-book.webp" aria-label="Open artwork: Armchair with a book and blanket"><img src="/sketch_journal/armchair-and-book.webp" alt="Sketch Journal: Armchair with a book and blanket" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/sketch_journal/fried-egg.webp" aria-label="Open artwork: Fried egg"><img src="/sketch_journal/fried-egg.webp" alt="Sketch Journal: Fried egg" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/sketch_journal/potted-cactus.webp" aria-label="Open artwork: Potted cactus"><img src="/sketch_journal/potted-cactus.webp" alt="Sketch Journal: Potted cactus" loading="lazy" decoding="async"></a></figure>
 </div>
 </main>
 <dialog class="photo-viewer" aria-label="Artwork viewer">
