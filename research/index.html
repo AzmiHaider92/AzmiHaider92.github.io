@@ -39,6 +39,41 @@
   </style>
   <link rel="stylesheet" href="/theme.css?v=1">
   <script src="/theme.js?v=1"></script>
+  <style>
+    .fun-project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.25rem;
+    }
+    .fun-project-card {
+      min-width: 0;
+      padding: 1rem;
+      border: 1px solid var(--line);
+      border-radius: .75rem;
+      background: var(--surface, white);
+    }
+    .fun-project-card .project-preview {
+      width: 100%;
+      gap: .85rem;
+    }
+    .research .fun-project-card .project-preview img {
+      width: 100%;
+      height: 12.5rem;
+      object-fit: contain;
+      border-radius: .45rem;
+    }
+    .fun-project-card h3 {
+      margin: 1rem 0 .5rem;
+      font-size: 1.05rem;
+      line-height: 1.4;
+    }
+    .fun-project-card p { margin: 0; font-size: .95rem; }
+    @media (max-width: 44rem) {
+      .fun-project-grid { grid-template-columns: minmax(0, 1fr); }
+      .research .fun-project-card .project-preview img { height: 15rem; }
+    }
+  </style>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -89,27 +124,33 @@
 
     <section aria-labelledby="fun-projects">
       <h2 id="fun-projects">Fun Projects</h2>
-<article class="entry project-entry">
+<div class="fun-project-grid">
+<article class="fun-project-card">
 <div class="project-preview">
   <img src="/breakout_best.gif" alt="Reinforcement learning agent playing Breakout" width="200">
   <a class="project-link" href="https://github.com/AzmiHaider92/RL">Project page <span aria-hidden="true">→</span></a>
 </div>
-<p><strong>RL Agents for Breakout &amp; CartPole</strong> — Implemented reinforcement-learning agents to play Breakout and CartPole Atari games, training policies from interaction with the environment and evaluating learning curves and performance across runs.</p>
+<h3>RL Agents for Breakout &amp; CartPole</h3>
+<p>Deep Q-learning agents that balance CartPole and learn to play Atari Breakout from pixels.</p>
 </article>
-<article class="entry project-entry">
+<article class="fun-project-card">
 <div class="project-preview">
   <img src="/PainterByNumber.png" alt="Painter by Numbers project" width="200">
   <a class="project-link" href="https://github.com/AzmiHaider92/PainterByNumbers">Project page <span aria-hidden="true">→</span></a>
 </div>
-<p><strong>Painter by Numbers (<a href="https://www.kaggle.com/c/painter-by-numbers">Kaggle Competition</a>)</strong> — A Kaggle project that learns artist-style embeddings with Siamese and triplet networks to identify whether paintings share an artist.</p>
+<h3>Painter by Numbers (<a href="https://www.kaggle.com/c/painter-by-numbers">Kaggle Competition</a>)</h3>
+<p>A Kaggle project that learns artist-style embeddings with Siamese and triplet networks to identify whether paintings share an artist.</p>
 </article>
-<article class="entry project-entry">
+<article class="fun-project-card">
 <div class="project-preview">
   <img src="/rgb_maps.gif" alt="NeRF perfect-loop animation" width="200">
   <a class="project-link" href="https://github.com/AzmiHaider92/Perfect-loop-gif-nerf">Project page <span aria-hidden="true">→</span></a>
 </div>
-<p><strong>Perfect-Loop GIFs with NeRF</strong> — Turning a video into a seamless loop by reconstructing its 3D scene with NeRF and rendering a closed camera path.</p>
+<h3>Perfect-Loop GIFs with NeRF</h3>
+<p>Turning a video into a seamless loop by reconstructing its 3D scene with NeRF and rendering a closed camera path.</p>
 </article>
+    
+</div>
     </section>
   </main>
 </body>
