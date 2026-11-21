@@ -6,27 +6,43 @@
   <title>Unplugged | Azmi Haider</title>
   <link rel="stylesheet" href="../portfolio.css">
   <style>
-    .gallery-section {
-      margin-top: clamp(2rem, 5vw, 3.5rem);
-      padding-top: clamp(1.5rem, 4vw, 2.5rem);
-      border-top: 1px solid var(--line);
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.25rem;
+      margin-top: 2rem;
     }
-    .gallery-section h2 {
-      margin: 0 0 .4rem;
-      font-size: clamp(1.5rem, 4vw, 2rem);
-      line-height: 1.2;
+    .gallery-card {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      padding: 1rem;
+      border: 1px solid var(--line);
+      border-radius: .75rem;
+      background: var(--surface, white);
     }
-    .gallery-section > p { color: var(--muted); }
-    .gallery-preview { width: min(100%, 38rem); margin: 1.25rem auto 0; }
+    .gallery-card h2 {
+      margin: 0 0 1rem;
+      font-size: 1.2rem;
+      line-height: 1.35;
+    }
+    .gallery-preview { margin: 0; }
     .gallery-preview img {
       display: block;
       width: 100%;
-      height: auto;
-      max-height: 26rem;
+      height: 13rem;
       object-fit: contain;
-      border-radius: 10px;
+      border-radius: .5rem;
     }
-    .gallery-action { justify-content: center; margin: 1rem 0 0; }
+    .gallery-action {
+      justify-content: center;
+      margin: auto 0 0;
+      padding-top: 1.25rem;
+    }
+    @media (max-width: 44rem) {
+      .gallery-grid { grid-template-columns: minmax(0, 1fr); }
+      .gallery-preview img { height: 16rem; }
+    }
   </style>
   <link rel="stylesheet" href="/theme.css?v=1">
   <script src="/theme.js?v=1"></script>
@@ -42,36 +58,35 @@
   <main class="frame unplugged" id="main">
     <h1 id="unplugged">Unplugged</h1>
     <p>When I’m away from the keyboard, I enjoy sketching with graphite pencils, fineliners, and markers. Here’s a collection of some of that work.</p>
-    <section class="gallery-section">
+    <div class="gallery-grid">
+    <section class="gallery-card">
       <h2>Urban Sketches</h2>
-      <p>Places I’ve visited and sketched in pen and marker.</p>
       <figure class="gallery-preview">
         <img src="/Urban_sketches.png" alt="A collection of urban sketches">
       </figure>
       <div class="contact-links gallery-action">
-        <a href="/urban_sketches_gallery" aria-label="See full gallery: Urban Sketches">See full gallery</a>
+        <a href="/urban_sketches_gallery" aria-label="View gallery: Urban Sketches">View gallery <span aria-hidden="true">→</span></a>
       </div>
     </section>
-    <section class="gallery-section">
+    <section class="gallery-card">
       <h2>Pencil Drawings</h2>
-      <p>Drawings in HB, 2B, and 4B graphite.</p>
       <figure class="gallery-preview">
         <img src="/pencil_drawings.png" alt="A collection of graphite pencil drawings" loading="lazy">
       </figure>
       <div class="contact-links gallery-action">
-        <a href="/pencil_gallery" aria-label="See full gallery: Pencil Drawings">See full gallery</a>
+        <a href="/pencil_gallery" aria-label="View gallery: Pencil Drawings">View gallery <span aria-hidden="true">→</span></a>
       </div>
     </section>
-    <section class="gallery-section">
+    <section class="gallery-card">
       <h2>Sketch Journal</h2>
-      <p>Everyday objects drawn with Micron pens.</p>
       <figure class="gallery-preview">
         <img src="/sketch_journal.png" alt="Sketch journal drawings of everyday objects" loading="lazy">
       </figure>
       <div class="contact-links gallery-action">
-        <a href="/sketch_journal_gallery" aria-label="See full gallery: Sketch Journal">See full gallery</a>
+        <a href="/sketch_journal_gallery" aria-label="View gallery: Sketch Journal">View gallery <span aria-hidden="true">→</span></a>
       </div>
     </section>
+    </div>
   </main>
 </body>
 </html>
