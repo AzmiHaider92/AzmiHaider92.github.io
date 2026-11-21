@@ -19,7 +19,11 @@
       line-height: 1.75;
       text-align: center;
     }
-    .unplugged-quote p { margin: 0; }
+    .unplugged-quote p { margin: 0; text-wrap: balance; }
+    .unplugged-quote p + p { margin-top: .85em; }
+    .unplugged-quote .quote-reflection { max-width: 47rem; margin-inline: auto; }
+    @media (max-width: 36rem) { .unplugged-quote .quote-break { display: none; } }
+    .unplugged-quote .quote-closing { max-width: 43rem; margin-inline: auto; color: var(--ink); }
     main.unplugged > .gallery-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -61,7 +65,11 @@
     </div>
   </header>
   <main class="frame unplugged" id="main">
-    <blockquote class="unplugged-quote"><p>A machine may imitate art, but it can never add life to it. Art is born of overthinking, obsession, suffering, and the scars of a life lived. It is more than the image we see; it is the human experience behind it. <strong>A machine can imitate the art, but it can never inherit the life that made it necessary.</strong></p></blockquote>
+    <blockquote class="unplugged-quote">
+      <p>A machine may imitate art,<br>but it can never add life to it.</p>
+      <p class="quote-reflection">Art is born of overthinking, obsession, suffering,<br class="quote-break"> and the scars of a life lived.<br>It is more than an image; it is the human experience behind it.</p>
+      <p class="quote-closing"><strong>A machine can imitate the art,<br>but it can never inherit the life that made it necessary.</strong></p>
+    </blockquote>
     <h1 id="unplugged">Unplugged</h1>
     <p>A few things I enjoy when I’m away from the keyboard, from drawing by hand to exploring the world through a camera.</p>
     <div class="gallery-grid">
