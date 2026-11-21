@@ -9,39 +9,41 @@
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1.25rem;
-      margin-top: 2rem;
+      gap: .875rem;
+      margin-top: 1.25rem;
     }
     .gallery-card {
       display: flex;
       flex-direction: column;
       min-width: 0;
-      padding: 1rem;
+      padding: .875rem;
       border: 1px solid var(--line);
       border-radius: .75rem;
       background: var(--surface, white);
     }
     .gallery-card h2 {
-      margin: 0 0 1rem;
+      margin: 0 0 .35rem;
       font-size: 1.2rem;
       line-height: 1.35;
     }
+    .gallery-description { margin: 0 0 .75rem; color: var(--muted); font-size: .9rem; line-height: 1.45; }
     .gallery-preview { margin: 0; }
     .gallery-preview img {
       display: block;
       width: 100%;
-      height: 13rem;
+      height: auto;
+      max-height: 11rem;
       object-fit: contain;
       border-radius: .5rem;
     }
     .gallery-action {
       justify-content: center;
       margin: auto 0 0;
-      padding-top: 1.25rem;
+      padding-top: .75rem;
     }
     @media (max-width: 44rem) {
       .gallery-grid { grid-template-columns: minmax(0, 1fr); }
-      .gallery-preview img { height: 16rem; }
+      .gallery-preview img { max-height: 13rem; }
     }
   </style>
   <link rel="stylesheet" href="/theme.css?v=1">
@@ -61,6 +63,7 @@
     <div class="gallery-grid">
     <section class="gallery-card">
       <h2>Urban Sketches</h2>
+      <p class="gallery-description">Places I’ve visited and sketched in pen and marker.</p>
       <figure class="gallery-preview">
         <img src="/Urban_sketches.png" alt="A collection of urban sketches">
       </figure>
@@ -70,6 +73,7 @@
     </section>
     <section class="gallery-card">
       <h2>Pencil Drawings</h2>
+      <p class="gallery-description">Drawings in HB, 2B, and 4B graphite.</p>
       <figure class="gallery-preview">
         <img src="/pencil_drawings.png" alt="A collection of graphite pencil drawings" loading="lazy">
       </figure>
@@ -79,6 +83,7 @@
     </section>
     <section class="gallery-card">
       <h2>Sketch Journal</h2>
+      <p class="gallery-description">Everyday objects drawn with Micron pens.</p>
       <figure class="gallery-preview">
         <img src="/sketch_journal.png" alt="Sketch journal drawings of everyday objects" loading="lazy">
       </figure>
