@@ -1,55 +1,48 @@
 ---
-title: Sketch Journal Gallery
+layout: null
+permalink: /sketch_journal_gallery/
 ---
-
-# Sketch Journal Gallery
-
-<div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); gap:12px;">
-
-  <a href="/sketch_journal/Mushroom.jpg" style="display:block; width:100%; aspect-ratio:1/1; overflow:hidden; border-radius:10px;">
-    <img src="/sketch_journal/Mushroom.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
-  </a>
-
-  <a href="/sketch_journal/garlic.jpg" style="display:block; width:100%; aspect-ratio:1/1; overflow:hidden; border-radius:10px;">
-    <img src="/sketch_journal/garlic.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
-  </a>
-
-  <a href="/sketch_journal/cup.jpg" style="display:block; width:100%; aspect-ratio:1/1; overflow:hidden; border-radius:10px;">
-    <img src="/sketch_journal/cup.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
-  </a>
-
-  <a href="/sketch_journal/girl_at_cafe.jpg" style="display:block; width:100%; aspect-ratio:1/1; overflow:hidden; border-radius:10px;">
-    <img src="/sketch_journal/girl_at_cafe.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
-  </a>
-
-  <a href="/sketch_journal/My_canon.jpg" style="display:block; width:100%; aspect-ratio:1/1; overflow:hidden; border-radius:10px;">
-    <img src="/sketch_journal/My_canon.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
-  </a>
-
-  <a href="/sketch_journal/Plant.jpg" style="display:block; width:100%; aspect-ratio:1/1; overflow:hidden; border-radius:10px;">
-    <img src="/sketch_journal/Plant.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
-  </a>
-
-  <a href="/sketch_journal/Cactus.jpg" style="display:block; width:100%; aspect-ratio:1/1; overflow:hidden; border-radius:10px;">
-    <img src="/sketch_journal/Cactus.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
-  </a>
-
-  <a href="/sketch_journal/Cat_yawn.jpg" style="display:block; width:100%; aspect-ratio:1/1; overflow:hidden; border-radius:10px;">
-    <img src="/sketch_journal/Cat_yawn.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
-  </a>
-
-  <a href="/sketch_journal/Salt_haifa.jpg" style="display:block; width:100%; aspect-ratio:1/1; overflow:hidden; border-radius:10px;">
-    <img src="/sketch_journal/Salt_haifa.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
-  </a>
-
-  <a href="/sketch_journal/Lulu.jpg" style="display:block; width:100%; aspect-ratio:1/1; overflow:hidden; border-radius:10px;">
-    <img src="/sketch_journal/Lulu.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
-  </a>
-
-  <a href="/sketch_journal/Knight.jpg" style="display:block; width:100%; aspect-ratio:1/1; overflow:hidden; border-radius:10px;">
-    <img src="/sketch_journal/Knight.jpg" style="width:100%; height:100%; object-fit:cover; display:block;">
-  </a>
-
-  
-
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Everyday observations drawn by hand with Micron pens.">
+<title>Sketch Journal | Azmi Haider</title>
+<link rel="stylesheet" href="/portfolio.css">
+<link rel="stylesheet" href="/photography_gallery/gallery.css">
+<link rel="stylesheet" href="/theme.css?v=1">
+<script src="/theme.js?v=1"></script>
+<script defer src="/photography_gallery/gallery.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="frame header-inner">
+<a class="site-name" href="/">Azmi Haider</a>
+<nav aria-label="Main navigation"><a href="/">About</a><a href="/research/">Research</a><a href="/unplugged/">Unplugged</a></nav>
+</div></header>
+<main class="photography" id="main">
+<a href="/unplugged/">Back to Unplugged</a>
+<h1>Sketch Journal</h1>
+<p>Everyday observations drawn by hand with Micron pens.</p>
+<div class="photo-grid">
+<figure><a href="/sketch_journal/Mushroom.jpg" aria-label="Open artwork: Mushroom"><img src="/sketch_journal/Mushroom.jpg" alt="Sketch Journal: Mushroom" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/sketch_journal/garlic.jpg" aria-label="Open artwork: garlic"><img src="/sketch_journal/garlic.jpg" alt="Sketch Journal: garlic" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/sketch_journal/cup.jpg" aria-label="Open artwork: cup"><img src="/sketch_journal/cup.jpg" alt="Sketch Journal: cup" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/sketch_journal/girl_at_cafe.jpg" aria-label="Open artwork: girl at cafe"><img src="/sketch_journal/girl_at_cafe.jpg" alt="Sketch Journal: girl at cafe" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/sketch_journal/My_canon.jpg" aria-label="Open artwork: My canon"><img src="/sketch_journal/My_canon.jpg" alt="Sketch Journal: My canon" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/sketch_journal/Plant.jpg" aria-label="Open artwork: Plant"><img src="/sketch_journal/Plant.jpg" alt="Sketch Journal: Plant" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/sketch_journal/Cactus.jpg" aria-label="Open artwork: Cactus"><img src="/sketch_journal/Cactus.jpg" alt="Sketch Journal: Cactus" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/sketch_journal/Cat_yawn.jpg" aria-label="Open artwork: Cat yawn"><img src="/sketch_journal/Cat_yawn.jpg" alt="Sketch Journal: Cat yawn" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/sketch_journal/Salt_haifa.jpg" aria-label="Open artwork: Salt haifa"><img src="/sketch_journal/Salt_haifa.jpg" alt="Sketch Journal: Salt haifa" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/sketch_journal/Lulu.jpg" aria-label="Open artwork: Lulu"><img src="/sketch_journal/Lulu.jpg" alt="Sketch Journal: Lulu" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/sketch_journal/Knight.jpg" aria-label="Open artwork: Knight"><img src="/sketch_journal/Knight.jpg" alt="Sketch Journal: Knight" loading="lazy" decoding="async"></a></figure>
 </div>
+</main>
+<dialog class="photo-viewer" aria-label="Artwork viewer">
+<div class="viewer-controls"><button type="button" data-previous>Previous</button><button type="button" data-next>Next</button><button type="button" data-close>Close</button></div>
+<img class="viewer-image" alt="">
+<p class="viewer-caption" aria-live="polite"></p>
+</dialog>
+</body>
+</html>
