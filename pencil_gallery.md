@@ -26,15 +26,15 @@ permalink: /pencil_gallery/
 <h1>Pencil Drawings</h1>
 <p>Studies and drawings in HB, 2B, and 4B graphite.</p>
 <div class="photo-grid">
-<figure><a href="/pencil_gallery/mary_edited.png" aria-label="Open artwork: mary edited"><img src="/pencil_gallery/mary_edited.png" alt="Pencil Drawings: mary edited" loading="lazy" decoding="async"></a></figure>
-<figure><a href="/pencil_gallery/Naked_man.jpg" aria-label="Open artwork: Naked man"><img src="/pencil_gallery/Naked_man.jpg" alt="Pencil Drawings: Naked man" loading="lazy" decoding="async"></a></figure>
-<figure><a href="/pencil_gallery/leg.jpg" aria-label="Open artwork: leg"><img src="/pencil_gallery/leg.jpg" alt="Pencil Drawings: leg" loading="lazy" decoding="async"></a></figure>
-<figure><a href="/pencil_gallery/IMG_6327.jpg" aria-label="Open artwork: Graphite study 4"><img src="/pencil_gallery/IMG_6327.jpg" alt="Pencil Drawings: Graphite study 4" loading="lazy" decoding="async"></a></figure>
-<figure><a href="/pencil_gallery/IMG_6180.jpg" aria-label="Open artwork: Graphite study 5"><img src="/pencil_gallery/IMG_6180.jpg" alt="Pencil Drawings: Graphite study 5" loading="lazy" decoding="async"></a></figure>
-<figure><a href="/pencil_gallery/arm.jpg" aria-label="Open artwork: arm"><img src="/pencil_gallery/arm.jpg" alt="Pencil Drawings: arm" loading="lazy" decoding="async"></a></figure>
-<figure><a href="/pencil_gallery/IMG_6497_edited.jpg" aria-label="Open artwork: Graphite study 7"><img src="/pencil_gallery/IMG_6497_edited.jpg" alt="Pencil Drawings: Graphite study 7" loading="lazy" decoding="async"></a></figure>
-<figure><a href="/pencil_gallery/IMG_6290.jpg" aria-label="Open artwork: Graphite study 8"><img src="/pencil_gallery/IMG_6290.jpg" alt="Pencil Drawings: Graphite study 8" loading="lazy" decoding="async"></a></figure>
-<figure><a href="/pencil_gallery/naked.jpg" aria-label="Open artwork: naked"><img src="/pencil_gallery/naked.jpg" alt="Pencil Drawings: naked" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/pencil_gallery/mary_edited.png" aria-label="Open artwork: Drapery Study"><img src="/pencil_gallery/mary_edited.png" alt="Drapery Study" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/pencil_gallery/Naked_man.jpg" aria-label="Open artwork: Standing Figure"><img src="/pencil_gallery/Naked_man.jpg" alt="Standing Figure" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/pencil_gallery/leg.jpg" aria-label="Open artwork: En Pointe"><img src="/pencil_gallery/leg.jpg" alt="En Pointe" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/pencil_gallery/IMG_6327.jpg" aria-label="Open artwork: Bridge Pose"><img src="/pencil_gallery/IMG_6327.jpg" alt="Bridge Pose" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/pencil_gallery/IMG_6180.jpg" aria-label="Open artwork: Horned Warrior"><img src="/pencil_gallery/IMG_6180.jpg" alt="Horned Warrior" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/pencil_gallery/arm.jpg" aria-label="Open artwork: Arm Anatomy Study"><img src="/pencil_gallery/arm.jpg" alt="Arm Anatomy Study" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/pencil_gallery/IMG_6497_edited.jpg" aria-label="Open artwork: Seated Figure"><img src="/pencil_gallery/IMG_6497_edited.jpg" alt="Seated Figure" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/pencil_gallery/IMG_6290.jpg" aria-label="Open artwork: Curled Up"><img src="/pencil_gallery/IMG_6290.jpg" alt="Curled Up" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/pencil_gallery/naked.jpg" aria-label="Open artwork: Reclining Figure"><img src="/pencil_gallery/naked.jpg" alt="Reclining Figure" loading="lazy" decoding="async"></a></figure>
 </div>
 </main>
 <dialog class="photo-viewer" aria-label="Artwork viewer">
