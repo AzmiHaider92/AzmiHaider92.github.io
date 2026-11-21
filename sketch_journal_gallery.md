@@ -42,6 +42,8 @@ permalink: /sketch_journal_gallery/
 <figure><a href="/sketch_journal/fried-egg.webp" aria-label="Open artwork: Fried egg"><img src="/sketch_journal/fried-egg.webp" alt="Sketch Journal: Fried egg" loading="lazy" decoding="async"></a></figure>
 <figure><a href="/sketch_journal/potted-cactus.webp" aria-label="Open artwork: Potted cactus"><img src="/sketch_journal/potted-cactus.webp" alt="Sketch Journal: Potted cactus" loading="lazy" decoding="async"></a></figure>
 <figure><a href="/sketch_journal/croissant.webp" aria-label="Open artwork: Croissant"><img src="/sketch_journal/croissant.webp" alt="Sketch Journal: Croissant" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/sketch_journal/zayed-airport-airplane.webp" aria-label="Open artwork: Airplane at Zayed International Airport"><img src="/sketch_journal/zayed-airport-airplane.webp" alt="Sketch Journal: Airplane at Zayed International Airport" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/sketch_journal/airplane-and-pen.webp" aria-label="Open artwork: Airplane sketch with a Micron pen"><img src="/sketch_journal/airplane-and-pen.webp" alt="Sketch Journal: Airplane sketch with a Micron pen" loading="lazy" decoding="async"></a></figure>
 </div>
 </main>
 <dialog class="photo-viewer" aria-label="Artwork viewer">
