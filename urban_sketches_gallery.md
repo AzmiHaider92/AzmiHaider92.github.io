@@ -11,7 +11,7 @@ permalink: /urban_sketches_gallery/
 <title>Urban Sketches | Azmi Haider</title>
 <link rel="stylesheet" href="/portfolio.css">
 <link rel="stylesheet" href="/photography_gallery/gallery.css">
-<link rel="stylesheet" href="/theme.css?v=2">
+<link rel="stylesheet" href="/theme.css?v=3">
 <script src="/theme.js?v=1"></script>
 <script defer src="/photography_gallery/gallery.js"></script>
 </head>
