@@ -19,7 +19,7 @@ permalink: /urban_sketches_gallery/
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="frame header-inner">
 <a class="site-name" href="/">Azmi Haider</a>
-<nav aria-label="Main navigation"><a href="/">About</a><a href="/research/">Research</a><a href="/unplugged/">Unplugged</a></nav>
+<nav aria-label="Main navigation"><a href="/">About</a><a href="/research/">Research</a><a href="/cv/">CV</a><a href="/unplugged/">Unplugged</a></nav>
 </div></header>
 <main class="photography" id="main">
 <a href="/unplugged/">Back to Unplugged</a>
