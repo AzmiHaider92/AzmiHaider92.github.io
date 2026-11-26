@@ -11,7 +11,7 @@ permalink: /pencil_gallery/
 <title>Pencil Drawings | Azmi Haider</title>
 <link rel="stylesheet" href="/portfolio.css">
 <link rel="stylesheet" href="/photography_gallery/gallery.css">
-<link rel="stylesheet" href="/theme.css?v=1">
+<link rel="stylesheet" href="/theme.css?v=2">
 <script src="/theme.js?v=1"></script>
 <script defer src="/photography_gallery/gallery.js"></script>
 </head>
@@ -19,7 +19,7 @@ permalink: /pencil_gallery/
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"><div class="frame header-inner">
 <a class="site-name" href="/">Azmi Haider</a>
-<nav aria-label="Main navigation"><a href="/">About</a><a href="/research/">Research</a><a href="/cv/">CV</a><a href="/unplugged/">Unplugged</a></nav>
+<nav aria-label="Main navigation"><a href="/research/">Research</a><a href="/cv/">CV</a><a href="/unplugged/" aria-current="page">Unplugged</a></nav>
 </div></header>
 <main class="photography" id="main">
 <a href="/unplugged/">Back to Unplugged</a>

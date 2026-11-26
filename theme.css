@@ -14,8 +14,19 @@
   --hover: #26394e;
   --label-surface: #233142;
 }
-.header-inner { position: relative; }
-.header-inner nav { margin-left: auto; }
+.site-header .header-inner {
+  position: relative;
+  width: min(100% - 3rem, 74rem);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  padding-top: 0;
+}
+.site-header .header-inner nav { margin-left: 0; width: auto; gap: 1.4rem; }
+.site-header .header-inner .theme-toggle { margin-left: auto; }
 .theme-toggle {
   display: inline-flex;
   align-items: center;
@@ -48,9 +59,12 @@
 :root[data-theme="dark"] .project-link:hover,
 :root[data-theme="dark"] .contact-links a:hover,
 :root[data-theme="dark"] .project .contact-links a:hover { background: var(--hover); }
+@media (max-width: 44rem) {
+  .site-header .header-inner { gap: 1.5rem; }
+}
 @media (max-width: 36rem) {
-  .header-inner { padding-right: 0; }
-  .header-inner nav { margin-left: 0; }
+  .site-header .header-inner { width: calc(100% - 2rem); flex-direction: column; align-items: flex-start; gap: 0; padding-top: .7rem; padding-right: 0; }
+  .site-header .header-inner nav { margin-left: 0; width: 100%; justify-content: flex-start; gap: 1.75rem; }
   .theme-toggle { position: absolute; right: 0; top: .45rem; }
   .site-name { padding-right: 3rem; }
 }
