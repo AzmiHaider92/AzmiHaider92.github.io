@@ -6,6 +6,7 @@
 <meta name="description" content="Azmi Haider — generative AI and computer vision researcher. Neural representations, reconstruction, and efficient probabilistic inference.">
 <title>Azmi Haider</title>
 <link rel="stylesheet" href="/portfolio.css">
+<link rel="stylesheet" href="/photography_gallery/gallery.css">
 <link rel="stylesheet" href="/theme.css?v=3">
 <script src="/theme.js?v=1"></script>
 <style>
@@ -58,10 +59,16 @@
 .home-content h1 { font-size: 2rem; }
 .home-details { margin-top: 1.5rem; }
 }
+.home-news { margin-top: 1.75rem; }
+.home-news .news-photos { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); columns: auto; gap: .6rem; margin: .2rem 0 .85rem; }
+.home-news .news-photos figure { margin: 0; min-width: 0; }
+.home-news .news-photos a { display: block; border: 1px solid var(--line); border-radius: .35rem; background: var(--surface); }
+.home-news .news-photos img { display: block; width: 100%; height: 7rem; object-fit: contain; }
 </style>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script defer src="/photography_gallery/gallery.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -91,11 +98,21 @@
 <p>Previously, I worked at Intel on 3D cameras, LiDAR, and face recognition.</p>
 <p class="career-note"><strong>Available immediately</strong> for Research Scientist, Applied AI Researcher, and Machine Learning Engineer roles. Open to relocation worldwide.</p>
 <div class="home-details">
+<div class="education-news-column">
 <section aria-labelledby="education"><h2 id="education">Education</h2>
 <details class="education-fold"><summary><strong>Ph.D. · Computer Science</strong><span>University of Haifa · 2022–2026</span></summary><div class="degree-detail"><p>Advisor: Dr. Dan Rosenbaum</p><p>Neural Modeling of Continuous Signals: Representation, Reconstruction, and Probabilistic Inference.</p><p>Research focuses on learning compact representations of continuous signals and developing efficient methods for reconstruction and probabilistic inference from sparse or incomplete observations. Work spans token-based neural fields, diffusion and flow-based generative models, and applications including 3D scene reconstruction, novel-view synthesis, physical fields, and image modeling.</p><a href="/PhD_Thesis.pdf" target="_blank" rel="noopener noreferrer">View thesis</a></div></details>
 <details class="education-fold"><summary><strong>M.Sc. · Computer Science</strong><span>University of Haifa · 2017–2020</span></summary><div class="degree-detail"><p>Advisor: Prof. Hagit Hel-Or</p><p>Forgery Detection in Depth Images.</p><p>The thesis focused on understanding depth-camera noise and using it to detect forged depth data. The key idea was that a depth measurement contains both scene geometry and characteristics of the sensor that captured it, so manipulated data may appear geometrically plausible while exhibiting inconsistent noise patterns.</p><p>Graduated with honors · GPA 94</p><a href="/MSC_Dissertation___Forgery_Detection_in_Depth_Images.pdf" target="_blank" rel="noopener noreferrer">View thesis</a></div></details>
 <details class="education-fold"><summary><strong>B.Sc. · Electrical Engineering</strong><span>Technion · 2012–2017</span></summary><div class="degree-detail"><p>Technion – Israel Institute of Technology</p><p>Focus: Computer and Software Engineering.</p></div></details>
 </section>
+<section class="home-news" aria-labelledby="news"><h2 id="news">News</h2>
+<details class="education-fold"><summary><strong>Graduating PhD</strong></summary>
+<div class="news-photos photo-grid" aria-label="PhD graduation photographs">
+<figure><a href="/news/graduating-phd/azmi-and-dan.webp" aria-label="Enlarge: Azmi Haider and Dr. Dan Rosenbaum with the framed portrait"><img src="/news/graduating-phd/azmi-and-dan.webp" alt="Azmi Haider and Dr. Dan Rosenbaum with the framed portrait" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/news/graduating-phd/dan-portrait.webp" aria-label="Enlarge: A hand-drawn portrait of Dr. Dan Rosenbaum with research motifs"><img src="/news/graduating-phd/dan-portrait.webp" alt="A hand-drawn portrait of Dr. Dan Rosenbaum with research motifs" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/news/graduating-phd/portrait-inscription.webp" aria-label="Enlarge: The handwritten dedication beneath the portrait"><img src="/news/graduating-phd/portrait-inscription.webp" alt="The handwritten dedication beneath the portrait" loading="lazy" decoding="async"></a></figure>
+<figure><a href="/news/graduating-phd/thank-you-gift.webp" aria-label="Enlarge: A thank-you gift for Dr. Dan Rosenbaum"><img src="/news/graduating-phd/thank-you-gift.webp" alt="A thank-you gift for Dr. Dan Rosenbaum" loading="lazy" decoding="async"></a></figure>
+</div></details></section>
+</div>
 <section aria-labelledby="research-interests"><h2 id="research-interests">Research Interests</h2>
 <ul class="research-interest-grid" aria-label="Research interests">
   <li>Generative models for 3D reconstruction and probabilistic scene inference</li>
@@ -108,5 +125,9 @@
 </div>
 </div>
 </main>
+<dialog class="photo-viewer" aria-label="Graduation photo viewer">
+<div class="viewer-controls"><button type="button" data-previous>Previous</button><button type="button" data-next>Next</button><button type="button" data-close>Close</button></div>
+<img class="viewer-image" alt=""><p class="viewer-caption" aria-live="polite"></p>
+</dialog>
 </body>
 </html>
